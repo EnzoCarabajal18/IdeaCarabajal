@@ -1,0 +1,673 @@
+body{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    border-bottom: solid 15px rgb(232, 228, 228);
+    border-top: solid 15px rgb(232, 228, 228);
+}
+.menu{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 30px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.menu:hover{
+    text-decoration:underline;
+}
+.image{
+    margin-right: 80px;
+}
+.image:hover{
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+}
+@-webkit-keyframes jello-horizontal {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+}
+  @keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+}
+.publicidad{
+    display: flex;
+justify-content: center;
+}
+.ofertas{
+    border-radius: 10px;
+    justify-content:baseline;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.hijo{
+	-webkit-animation: wobble-hor-top 0.8s both;
+	animation: wobble-hor-top 0.8s both;
+    border-radius: 15px;
+}
+@-webkit-keyframes wobble-hor-top {
+    0%,
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    15% {
+      -webkit-transform: translateX(-30px) rotate(6deg);
+              transform: translateX(-30px) rotate(6deg);
+    }
+    30% {
+      -webkit-transform: translateX(15px) rotate(-6deg);
+              transform: translateX(15px) rotate(-6deg);
+    }
+    45% {
+      -webkit-transform: translateX(-15px) rotate(3.6deg);
+              transform: translateX(-15px) rotate(3.6deg);
+    }
+    60% {
+      -webkit-transform: translateX(9px) rotate(-2.4deg);
+              transform: translateX(9px) rotate(-2.4deg);
+    }
+    75% {
+      -webkit-transform: translateX(-6px) rotate(1.2deg);
+              transform: translateX(-6px) rotate(1.2deg);
+    }
+}
+.padre2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-gap: 10px;
+    margin: 0 50px;
+}
+.mardelplata{
+    grid-column: 1/3;
+    background: url(images/mdp.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align:unset;
+}
+.bariloche{
+    background: url(images/bariloche.webp);
+    background-size: cover;
+    background-position: center;
+    text-align: end;
+}
+.jujuy{
+    background: url(images/jujuy.webp);
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+.villagesell{
+    grid-column: 2/4;
+    background: url(images/villagesell.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: end;
+}
+.mardelplata h2, .bariloche h2, .jujuy h2, .villagesell h2{
+    background-position: center;
+    text-align: end;
+    background: grey;
+    margin: 10px;
+    color: #fff;
+}
+.mardelplata a, .bariloche a, .jujuy a, .villagesell a{
+    font-size: 17px;
+    border-radius: 15px;
+    letter-spacing: 4px;
+    border: 0;
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: white;
+    padding: 10px;
+}
+.mardelplata a:hover, .bariloche a:hover, .jujuy a:hover, .villagesell a:hover{
+    color: white;
+    background: #444343;
+}
+.public{
+    display: flex;
+    margin:20 150px;
+}
+.publicidadtres{
+    background: cornsilk;
+    margin: 30px 130px;
+}
+.comentario{
+    display: flex;
+    background: cornflowerblue;
+    justify-content: center;
+    margin: 0 388px;
+}
+.footer{ 
+    margin: 0;
+    padding: 20px;
+    background: url(images/imagenfooter.jpg);   
+    background-position: center;
+    font-family: sans-serif;
+    text-align:center ;
+    bottom: 0;
+}
+.mza{display: flex;
+    justify-content:center;
+    margin-top: 10px;
+    font-family: cursive;
+    color: black;
+}
+.redes{
+    justify-content: center;
+    padding: 10px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.sitioweb{
+    color: #000;
+    justify-content:inherit;
+    margin-bottom: 0;
+}
+@media screen and (max-width: 1023px) {
+nav{
+    flex-direction: column;
+    text-align: center;
+}
+.ofertas{
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+.image{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.padre2{
+    grid-template-columns:100%;
+    grid-template-rows: repeat(4, 300px);
+    grid-gap: 10px;
+    margin: 20px;
+}
+.mardelplata, .bariloche, .jujuy, .villagesell{
+    grid-column: 1;
+}
+.mardelplata{
+    grid-row: 1;
+}
+.bariloche{
+    grid-row: 2;
+}
+.jujuy{
+    grid-row: 3;
+}
+.villagesell{
+    grid-row: 4;
+}
+ .publicidad{
+    display: none;
+} 
+.menu{
+    padding: 0;
+    margin: 0;
+}
+}   
+.hoteles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 350px);
+    grid-gap: 30px;
+    margin: 0 150px;
+    margin-bottom: 30px;
+}
+.hotel{
+    grid-column: 1/4;
+    transition: transform 1s;
+    border-radius: 15px;
+}
+.hotel:hover{
+    transform: scale(1.1);
+    max-width: 100%;
+}
+
+.hotel a{
+    text-decoration: none;
+}
+.dosreyes{ 
+    background: url(images/hoteldosreyes.webp);
+    background-size: cover;
+    background-position:top;
+}
+.milan{
+    background: url(images/hotelmilan.jpg);
+      background-size:cover;
+      background-position: center;
+}
+.plazajujuy{
+    background: url(images/hotelplazajujuy.jpg);
+    background-size:cover;
+    background-position: center;
+}
+.rideamus{
+    background: url(images/rideamus.png);
+    background-size:cover;
+    background-position: center;
+    }
+.milan h1, .dosreyes h1, .plazajujuy h1, .rideamus h1{
+    color: #000;
+    background: #fff;
+    margin: 15px;
+    border-radius: 5px;
+    font-size: 17px;
+    border-radius: 15px;
+    position: absolute;
+    letter-spacing: 4px;
+    border: 0;
+    text-decoration: none;
+    padding: 10px;
+}
+.milan h1:hover, .dosreyes h1:hover, .plazajujuy h1:hover, .rideamus h1:hover{
+    background: #000;
+    color: #fff;
+}
+.texto{
+        -webkit-animation: tracking-in-contract-bck-top 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: tracking-in-contract-bck-top 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@-webkit-keyframes tracking-in-contract-bck-top {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px) translateY(-300px);
+              transform: translateZ(400px) translateY(-300px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+    }
+    @keyframes texto {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px) translateY(-300px);
+              transform: translateZ(400px) translateY(-300px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+}
+.impreviaje{
+        -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+        animation: heartbeat 1.5s ease-in-out infinite both;
+    }
+@-webkit-keyframes heartbeat {
+    from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;  
+              transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;   
+    animation-timing-function: ease-out;
+    }
+    10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    }
+    17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    }
+    33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    }
+    45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    }
+}
+ @keyframes heartbeat {
+    from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    }
+    10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    }
+    17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    }
+    33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    }
+    45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    }
+}
+@media screen and (max-width: 1023px){
+    .hoteles{
+        margin: 0;
+        grid-gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .hotel:hover{
+        transform: scale(1);
+    }
+
+    .milan h1, .dosreyes h1, .plazajujuy h1, .rideamus h1{
+        margin: 270px auto 0;
+    }
+
+    .hotel a{
+        text-decoration: none;
+    }
+    .milan h1:hover, .dosreyes h1:hover, .plazajujuy h1:hover, .rideamus h1:hover{
+        background: #000;
+        color: #fff;
+    }
+}
+.itemconsultas{
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 50px;
+    margin-bottom: 50px;
+}
+.casillas, .casilla-1{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 80px);
+    margin: 0 300px;
+    gap: 10px;
+    justify-content: center!important
+}
+.casilla1{
+    grid-column: 1/5;
+}
+.casilla2{
+    grid-column: 1/5;
+}
+.casilla3{
+    grid-column: 1/3;
+}
+.casilla4{
+    grid-column: 3/5;
+}
+.casilla5{
+    grid-column: 2/4;
+}
+.casilla6{
+    grid-column: 1/5;
+}
+.casillaitem{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    border: 1px solid black;
+    padding: 0px 0px 0px 30px;
+    font-size: 17px;
+}
+.button{
+    background-color: #D0B483;
+    text-align: center;
+    border: 1px solid black;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    font-family: 'Merriweather-Bold';
+    font-size: 17px;
+    color: #1F2228;
+    padding: 0px 0px 0px 30px;
+}
+.button:hover{
+    background: #000;
+    color: #fff;
+}
+.maincontactos{
+    background: url(images/bariloche.webp);
+}
+@media screen and (max-width: 1023px){
+.casillas{
+    height: vh;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(6, 50px);
+    margin: 0 400px 0px 100px;
+    padding-bottom: 10px;
+    gap: 0;
+    justify-content: center!important;
+}
+.casilla3{
+    grid-column: 1/5;
+}
+.casilla4{
+    grid-column: 1/5;
+}
+.casilla5{
+    grid-column: 1/5;
+}
+.casilla6{
+    grid-column: 1/5;
+    background-color: #D0B483;
+    padding: 10px;
+}
+.button{
+    padding: 0 10px;
+}
+.itemconsultas{
+    padding: 0;
+}
+.footer{
+    padding: 44px;
+}
+.impreviaje{
+    width: 100px;
+}
+}
+@media screen and (max-width: 700px){
+    .casillas{
+        margin: 0px 50px 0px 40px;
+    }
+}
+.informacion{
+    padding: 0 50px;
+    color: #000;
+
+}
+.casillas-1{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(7, 80px);
+    margin: 0px 500px 0 50px;
+    gap: 10px;
+    justify-content: center!important;
+    grid-row: 1/5;
+}
+.casilla-2{
+    grid-column: 1/5;
+}
+.seleccion{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+@media screen and (max-width: 1023px){
+    .casillas-1{
+        height: vh;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(6, 50px);
+        margin: 0 400px 0px 100px;
+        padding-bottom: 10px;
+        gap: 0;
+        justify-content: center!important;
+    }
+}
+@media screen and (max-width: 700px){
+    .casillas-1{
+        margin: 0px 50px 0px 40px;
+    }
+    .menu{
+        text-align: center;
+    }
+}
+.meinasistencia{
+    margin: 0 50px;
+}
+.asistencia{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 550px;
+   
+}
+.itemasistencia{
+    border: 1px solid;
+    margin: 20px;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.itemasistencia h4{
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding: 10px;
+    
+}
+.itemasistencia:hover{
+    background: black;
+    color: #fff;
+}
+.titulo-asistencia{
+    font-size: 20px;
+    margin: 15px 0 0 20px;
+}
+@media screen and (max-width: 1023px){
+    .asistencia{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 300px);
+        text-align: center;
+        padding: 0 10px;
+    }
+    .itemasistencia{
+        margin: 0;
+        text-align: center;
+    }
+    .itemasistencia h4{
+        text-align: center;
+        padding: 20px
+    }
+}
+@media screen and (max-width: 700px){
+    .asistencia{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 350px);
+        text-align: center;
+        padding: 0 10px;
+    }
+    .itemasistencia h4{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
