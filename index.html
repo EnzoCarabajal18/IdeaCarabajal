@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mza Viajes</title>
-    <link rel="stylesheet" href="./estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./nuevosestilos.css">
     <link rel="stylesheet" href="https://jam-icons.com/">
+    <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
 <header>
@@ -20,35 +21,82 @@
         <a href="asistencias.html" class="menu">Asistencias</a>
     </nav>
 </header>
-<br>
+
 <main class="main">
-    <h2 class="ofertas">Descubrí nuestras ofertas en los mejores destinos pagando en cuotas.</h2> 
-      
-        <section class="padre2">
-            <div class="hijo mardelplata">
-                <h2>Mar del plata</h2>
-                <a href="#">Ver Más</a>
-            </div>
-            <div class="hijo bariloche">
-                <h2>Bariloche</h2>
-                <a href="#">Ver Más</a>
-            </div>
-            <div class="hijo jujuy">
-                <h2>Jujuy</h2>
-                <a href="#">Ver Más</a>
-            </div>
-            <div class="hijo villagesell">
-                <h2>Villa Gesell</h2>
-                <a href="#">Ver Más</a>
-            </div>
-        </section>    
-        <section>
-            <div class="publicidad">
-                <img class="impreviaje" src="images/previaje.jpg" alt="">                     
-            </div>
-        </section>
-         <hr>
-      
+      <h2 class="ofertas">Descubrí nuestras ofertas en los mejores destinos pagando en cuotas.</h2> 
+  <section class="sec-1">
+    <div class="container">
+        <div class="row row-index p-3">
+        <div class="col-12 col-md-6 mardelplata">
+        </div>
+        <div class="col-12 col-md-6">
+          <h2 class="fst-italic text-1">Mar del plata</h2>
+          <h3 class="text-2">Te regalamos hasta 8.000 puntos por tu primera compra</h3>
+          <hr>
+          <p>Precio final por persona</p>
+          <p>$34.535</p>
+          <p> Incluye impuestos, tasas y cargos</p>
+          <a class="col-a" href="#">Ver Más</a>
+
+        </div>
+        </div>
+
+        <div class="row row-index p-3">
+          <div class="col-12 col-md-6 bariloche">
+          </div>
+          <div class="col-12 col-md-6 light">
+            <h2 class="fst-italic text-1">Bariloche</h2>
+            <h3 class="text-2">Con tarjeta tus compras diarias suman puntos</h3>
+            <hr>
+            <p>Precio final por persona</p>
+            <p>$65.535</p>
+            <p> Incluye impuestos, tasas y cargos</p>
+            <a class="col-a" href="#">Ver Más</a>
+          </div>
+        </div>
+
+        <div class="row row-index p-3">
+          <div class="col-12 col-md-6 jujuy">
+          </div>
+          <div class="col-12 col-md-6 light">
+            <h2 class="fst-italic text-1">Jujuy</h2>
+            <h3 class="text-2">Con tu compra obtenes 20% off en tu próxima compra</h3>
+            <hr>
+            <p>Precio final por persona</p>
+            <p>$57.535</p>
+            <p> Incluye impuestos, tasas y cargos</p>
+            <a class="col-a" href="#">Ver Más</a>
+          </div>
+        </div>
+
+        <div class="row row-index p-3">
+        <div class="col-12 col-md-6 villagesell">
+        </div>
+          <div class="col-12 col-md-6 light">
+            <h2 class="fst-italic text-1">Villa Gesell</h2>
+            <h3 class="text-2">Recibí ofertas y descubrí el mundo</h3>
+            <hr>
+            <p>Precio final por persona</p>
+            <p>$39.535</p>
+            <p> Incluye impuestos, tasas y cargos</p>
+            <a class="col-a" href="#">Ver Más</a>
+        </div>
+    </div>
+  </section>
+
+    <div class="publicidad">
+      <img src="images/previaje.jpg" class="img-fluid" alt="...">                     
+    </div>
+  </section>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="hoteles.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="trabajos.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="contactos.html">4</a></li>
+            <li class="page-item"><a class="page-link" href="asistencias.html">5</a></li>
+            <li class="page-item"><a class="page-link" href="hoteles.html">Next</a></li>
+        </ul>
+  </nav>
 </main>
 <footer>
     <div class="footer">
@@ -59,8 +107,7 @@
         <a href="https://twitter.com/" class="redes"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -4 24 24" width="24" fill="currentColor"><path d="M20 1.907a8.292 8.292 0 0 1-2.356.637A4.07 4.07 0 0 0 19.448.31a8.349 8.349 0 0 1-2.607.98A4.12 4.12 0 0 0 13.846.015c-2.266 0-4.103 1.81-4.103 4.04 0 .316.036.625.106.92A11.708 11.708 0 0 1 1.393.754a3.964 3.964 0 0 0-.554 2.03c0 1.403.724 2.64 1.824 3.363A4.151 4.151 0 0 1 .805 5.64v.05c0 1.958 1.415 3.591 3.29 3.963a4.216 4.216 0 0 1-1.08.141c-.265 0-.522-.025-.773-.075a4.098 4.098 0 0 0 3.832 2.807 8.312 8.312 0 0 1-5.095 1.727c-.332 0-.658-.02-.979-.056a11.727 11.727 0 0 0 6.289 1.818c7.547 0 11.673-6.157 11.673-11.496l-.014-.523A8.126 8.126 0 0 0 20 1.907z"></path></svg></a>
         <p class="sitioweb">www.mzaviajes.com.ar</p>
     </div>
-   
 </footer>
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
