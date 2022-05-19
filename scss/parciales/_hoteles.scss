@@ -9,7 +9,8 @@
         -webkit-animation: wobble-hor-top 0.8s both;
         animation: wobble-hor-top 0.8s both;
         border-radius: 15px;
-    }@-webkit-keyframes wobble-hor-top {
+    }
+    @-webkit-keyframes wobble-hor-top {
         0%,
         100% {
           -webkit-transform: translateX(0%);

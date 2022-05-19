@@ -1,75 +1,67 @@
-
 .row-index{
-	-webkit-animation: wobble-hor-top 0.8s both;
-	animation: wobble-hor-top 0.8s both;
+    border: solid 0.5px;
     border-radius: 15px;
+    margin-top: 5px;
+    &{
+        -webkit-animation: wobble-hor-top 0.8s both;
+        animation: wobble-hor-top 0.8s both;
+        border-radius: 15px;
+    }
+    @-webkit-keyframes wobble-hor-top {
+        0%,
+        100% {
+          -webkit-transform: translateX(0%);
+                  transform: translateX(0%);
+          -webkit-transform-origin: 50% 50%;
+                  transform-origin: 50% 50%;
+        }
+        15% {
+          -webkit-transform: translateX(-30px) rotate(6deg);
+                  transform: translateX(-30px) rotate(6deg);
+        }
+        30% {
+          -webkit-transform: translateX(15px) rotate(-6deg);
+                  transform: translateX(15px) rotate(-6deg);
+        }
+        45% {
+          -webkit-transform: translateX(-15px) rotate(3.6deg);
+                  transform: translateX(-15px) rotate(3.6deg);
+        }
+        60% {
+          -webkit-transform: translateX(9px) rotate(-2.4deg);
+                  transform: translateX(9px) rotate(-2.4deg);
+        }
+        75% {
+          -webkit-transform: translateX(-6px) rotate(1.2deg);
+                  transform: translateX(-6px) rotate(1.2deg);
+        }
+    }
 }
-@-webkit-keyframes wobble-hor-top {
-    0%,
-    100% {
-      -webkit-transform: translateX(0%);
-              transform: translateX(0%);
-      -webkit-transform-origin: 50% 50%;
-              transform-origin: 50% 50%;
-    }
-    15% {
-      -webkit-transform: translateX(-30px) rotate(6deg);
-              transform: translateX(-30px) rotate(6deg);
-    }
-    30% {
-      -webkit-transform: translateX(15px) rotate(-6deg);
-              transform: translateX(15px) rotate(-6deg);
-    }
-    45% {
-      -webkit-transform: translateX(-15px) rotate(3.6deg);
-              transform: translateX(-15px) rotate(3.6deg);
-    }
-    60% {
-      -webkit-transform: translateX(9px) rotate(-2.4deg);
-              transform: translateX(9px) rotate(-2.4deg);
-    }
-    75% {
-      -webkit-transform: translateX(-6px) rotate(1.2deg);
-              transform: translateX(-6px) rotate(1.2deg);
-    }
-}
+
 .mardelplata{
     background: url(../images/mdp.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
 }
 .bariloche{
     background: url(../images/bariloche.webp);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
 }
 .jujuy{
     background: url(../images/jujuy.webp);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
 }
 .villagesell{
     background: url(../images/villagesell.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
 }
 .mardelplata, .bariloche, .jujuy, .villagesell{
     border-radius: 15px;
+    background-size: $background-size;
+    background-position: $background-position;
+    height: $height;
 
 }
 .mardelplata a:hover, .bariloche a:hover, .jujuy a:hover, .villagesell a:hover{
     color: white;
     background: #444343;
 }
-.row-index{
-    border: solid 0.5px;
-    border-radius: 15px;
-    margin-top: 5px;
-}
+
 .col-a{
     color: #fff;
     background: #000;

@@ -21,14 +21,20 @@ nav {
   text-align: center;
 }
 
-.menu-icons {
-  display: block;
-}
-
 .menu:hover {
   color: #000;
   transform: scale(1.4);
   max-width: 100%;
+}
+
+.menu-icons {
+  display: block;
+}
+
+.row-index {
+  border: solid 0.5px;
+  border-radius: 15px;
+  margin-top: 5px;
 }
 
 .row-index {
@@ -69,45 +75,30 @@ nav {
 
 .mardelplata {
   background: url(../images/mdp.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 500px;
 }
 
 .bariloche {
   background: url(../images/bariloche.webp);
-  background-size: cover;
-  background-position: center;
-  height: 500px;
 }
 
 .jujuy {
   background: url(../images/jujuy.webp);
-  background-size: cover;
-  background-position: center;
-  height: 500px;
 }
 
 .villagesell {
   background: url(../images/villagesell.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 500px;
 }
 
 .mardelplata, .bariloche, .jujuy, .villagesell {
   border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
 }
 
 .mardelplata a:hover, .bariloche a:hover, .jujuy a:hover, .villagesell a:hover {
   color: white;
   background: #444343;
-}
-
-.row-index {
-  border: solid 0.5px;
-  border-radius: 15px;
-  margin-top: 5px;
 }
 
 .col-a {
@@ -370,11 +361,6 @@ nav {
   max-width: 100%;
 }
 
-.item .itemasistencia:hover {
-  transform: scale(1.05);
-  max-width: 100%;
-}
-
 .footer {
   margin: 0;
   padding: 20px;
@@ -417,8 +403,8 @@ nav {
     text-align: center;
   }
   .image {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 0;
+    margin-right: 0;
   }
   .padre2 {
     grid-template-columns: 100%;
