@@ -1,0 +1,16 @@
+.item{
+    margin: 15px 0;
+    padding: 20px;
+    text-align: center;
+    &:hover{
+        background: black;
+        color: #fff;
+        transform: scale(1.05);
+        max-width: 100%;
+    } 
+    .itemasistencia:hover{
+        transform: scale(1.05);
+        max-width: 100%;
+    }
+}
+

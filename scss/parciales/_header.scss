@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    color: black;
+
+}
+nav{
+        display: flex;
+        justify-content: space-around;
+        padding: 5px;
+        border-bottom: solid 15px rgb(232, 228, 228);
+        border-top: solid 15px rgb(232, 228, 228);
+}
+.menu{
+        display: inline-block;
+        padding-top: 20px;
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        text-align: center;
+}
+.menu-icons{
+        display: block
+}
+.menu:hover{
+        color: #000;
+        transform: scale(1.4);
+        max-width: 100%;
+}
+
+
