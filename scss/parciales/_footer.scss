@@ -11,6 +11,7 @@
         margin-top: 10px;
         font-family: cursive;
         color: black;
+        padding: 5px;
     }
     .redes{
         justify-content: center;
@@ -22,22 +23,24 @@
         color: #000;
         justify-content: inherit;
         margin-bottom: 0;
+        padding: 5px;
       }
 }
 
 
-$redes: ( /*Declaramos nuestro mapa*/
+$redes: ( 
         twitter: #55acee,
         facebook:  #3a5795,
         youtube: #d71515,
         instagram: #dc8f00,
 
 ); 
-/*Creamos el bucle para usar los valores del mapa*/
+
 @each $red, $color in $redes {
    .btn--#{$red} {
        background-color: $color;
        border-radius: 10px;
+       border: solid 0.5px
    }
 }
 

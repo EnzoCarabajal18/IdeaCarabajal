@@ -73,23 +73,23 @@ nav {
   }
 }
 
-.mardelplata {
+.btn-mardelplata {
   background: url(../images/mdp.jpg);
 }
 
-.bariloche {
+.btn-bariloche {
   background: url(../images/bariloche.webp);
 }
 
-.jujuy {
+.btn-jujuy {
   background: url(../images/jujuy.webp);
 }
 
-.villagesell {
+.btn-villagesell {
   background: url(../images/villagesell.jpg);
 }
 
-.mardelplata, .bariloche, .jujuy, .villagesell {
+.btn-mardelplata, .btn-bariloche, .btn-jujuy, .btn-villagesell {
   border-radius: 15px;
   background-size: cover;
   background-position: center;
@@ -422,6 +422,7 @@ nav {
   padding: 20px;
   text-align: center;
   border-radius: 10px;
+  background: #888;
 }
 
 .item-1:hover {
@@ -436,6 +437,7 @@ nav {
   padding: 20px;
   text-align: center;
   border-radius: 10px;
+  background: #999;
 }
 
 .item-2:hover {
@@ -450,6 +452,7 @@ nav {
   padding: 20px;
   text-align: center;
   border-radius: 10px;
+  background: #888;
 }
 
 .item-3:hover {
@@ -464,6 +467,7 @@ nav {
   padding: 20px;
   text-align: center;
   border-radius: 10px;
+  background: #999;
 }
 
 .item-4:hover {
@@ -489,6 +493,7 @@ nav {
   margin-top: 10px;
   font-family: cursive;
   color: black;
+  padding: 5px;
 }
 
 .footer .redes {
@@ -502,27 +507,31 @@ nav {
   color: #000;
   justify-content: inherit;
   margin-bottom: 0;
+  padding: 5px;
 }
 
-/*Creamos el bucle para usar los valores del mapa*/
 .btn--twitter {
   background-color: #55acee;
   border-radius: 10px;
+  border: solid 0.5px;
 }
 
 .btn--facebook {
   background-color: #3a5795;
   border-radius: 10px;
+  border: solid 0.5px;
 }
 
 .btn--youtube {
   background-color: #d71515;
   border-radius: 10px;
+  border: solid 0.5px;
 }
 
 .btn--instagram {
   background-color: #dc8f00;
   border-radius: 10px;
+  border: solid 0.5px;
 }
 
 @media screen and (max-width: 1023px) {

@@ -1,6 +1,10 @@
-agregado de keywords y description, title para el SEO.
-incluye condicional en clase "trabajos".
-se agregó una operación en el e margin de la clase "publicidadtres" a modo ejemplo.
-agregado de bucle en la pagina "contactos"
-se utilizó el ejemplo "Maps" de la clase, ya que el sitio contenía redes sociales, y se agrego en cada ancla de redes sumando la de Youtube.
-se afregó un Mixin en Idex en los estilos de destinos y asistencias, pero no pude agregarle parámetros porque me decía error al compilar.
+Agregado de keywords y description, title para el SEO.
+ incluye condicional en clase "trabajos".
+Se agregó una operación en el e margin de la clase "publicidadtres" a modo ejemplo.
+Agregado de bucle en la pagina "contactos"
+se utilizó el ejemplo "Maps" de la clase, utilizando each ya que el sitio contenía redes sociales, y se agrego en cada ancla de redes sumando la de Youtube, así como también en Index.
+Se afregó un Mixin en Index en los estilos de destinos y asistencias, pero no pude agregarle parámetros porque aparece error al compilar.
+Se utilizó un "map-get" en Asistencias a modo ejemplo.
+
+
+Todas las variables con sus valores estan almacenadas en "_variables.scss".

@@ -12,13 +12,17 @@
 }
 .item-1{
     @include item;
+    background: map-get($estilos,  background1);
 }
 .item-2{
     @include item;
+    background: map-get($estilos,  background2);
 }
 .item-3{
     @include item;
+    background: map-get($estilos,  background1);
 }
 .item-4{
     @include item;
+    background: map-get($estilos,  background2);
 }

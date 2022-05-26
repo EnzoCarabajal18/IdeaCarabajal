@@ -38,25 +38,26 @@
     }
 }
 
-.mardelplata{
-    background: url(../images/mdp.jpg);
+$destinos-1: ( 
+    mardelplata: url(../images/mdp.jpg),
+    bariloche: url(../images/bariloche.webp),
+    jujuy: url(../images/jujuy.webp),
+    villagesell: url(../images/villagesell.jpg)
+); 
+
+@each $destino, $background in $destinos-1 {
+   .btn-#{$destino} {
+       background: $background;
+   }
 }
-.bariloche{
-    background: url(../images/bariloche.webp);
-}
-.jujuy{
-    background: url(../images/jujuy.webp);
-}
-.villagesell{
-    background: url(../images/villagesell.jpg);
-}
+
 @mixin destinos {
     border-radius: 15px;
     background-size: $background-size;
     background-position: $background-position;
     height: $height;
 }
-.mardelplata, .bariloche, .jujuy, .villagesell{
+.btn-mardelplata, .btn-bariloche, .btn-jujuy, .btn-villagesell{
     @include destinos;
 
 }
@@ -99,6 +100,3 @@
     display: flex;
 justify-content: center;
 }
-// .main{
-//     background: $main;
-// }
