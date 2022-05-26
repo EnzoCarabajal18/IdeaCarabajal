@@ -143,6 +143,14 @@ nav {
   justify-content: center;
 }
 
+.hotel, .hoteles .hotel {
+  background-size: cover;
+  background-position: center;
+  grid-column: 1/4;
+  transition: transform 1s;
+  border-radius: 15px;
+}
+
 .hoteles {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -190,26 +198,20 @@ nav {
 
 .hoteles .dosreyes {
   background: url(../images/hoteldosreyes.webp);
-  background-size: cover;
-  background-position: top;
 }
 
 .hoteles .milan {
   background: url(../images/hotelmilan.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .hoteles .plazajujuy {
   background: url(../images/hotelplazajujuy.jpg);
   background-size: cover;
-  background-position: center;
 }
 
 .hoteles .rideamus {
   background: url(../images/rideamus.png);
   background-size: cover;
-  background-position: center;
 }
 
 .hoteles .milan h1, .hoteles .dosreyes h1, .hoteles .plazajujuy h1, .hoteles .rideamus h1 {
@@ -229,12 +231,6 @@ nav {
 .hoteles .milan h1:hover, .hoteles .dosreyes h1:hover, .hoteles .plazajujuy h1:hover, .hoteles .rideamus h1:hover {
   background: #000;
   color: #fff;
-}
-
-.hoteles .hotel {
-  grid-column: 1/4;
-  transition: transform 1s;
-  border-radius: 15px;
 }
 
 .hoteles .hotel .hotel a {
@@ -348,13 +344,129 @@ nav {
   padding: 0 100px;
 }
 
-.item {
+.col-ofertas {
+  display: flex;
+  justify-content: space-around;
+}
+
+.col-ofertas .col-1 {
+  width: 20%;
+  height: 50px;
+  margin: 5px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 25px;
+  border: solid 1px black;
+}
+
+.col-ofertas .col-1 a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.col-ofertas .col-2 {
+  width: 20%;
+  height: 50px;
+  margin: 5px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 25px;
+  border: solid 1px black;
+}
+
+.col-ofertas .col-2 a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.col-ofertas .col-3 {
+  width: 20%;
+  height: 50px;
+  margin: 5px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 25px;
+  border: solid 1px black;
+}
+
+.col-ofertas .col-3 a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.col-ofertas .col-4 {
+  width: 20%;
+  height: 50px;
+  margin: 5px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 25px;
+  border: solid 1px black;
+}
+
+.col-ofertas .col-4 a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.item-1 {
   margin: 15px 0;
   padding: 20px;
   text-align: center;
+  border-radius: 10px;
 }
 
-.item:hover {
+.item-1:hover {
+  background: black;
+  color: #fff;
+  transform: scale(1.05);
+  max-width: 100%;
+}
+
+.item-2 {
+  margin: 15px 0;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.item-2:hover {
+  background: black;
+  color: #fff;
+  transform: scale(1.05);
+  max-width: 100%;
+}
+
+.item-3 {
+  margin: 15px 0;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.item-3:hover {
+  background: black;
+  color: #fff;
+  transform: scale(1.05);
+  max-width: 100%;
+}
+
+.item-4 {
+  margin: 15px 0;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.item-4:hover {
   background: black;
   color: #fff;
   transform: scale(1.05);
@@ -390,6 +502,27 @@ nav {
   color: #000;
   justify-content: inherit;
   margin-bottom: 0;
+}
+
+/*Creamos el bucle para usar los valores del mapa*/
+.btn--twitter {
+  background-color: #55acee;
+  border-radius: 10px;
+}
+
+.btn--facebook {
+  background-color: #3a5795;
+  border-radius: 10px;
+}
+
+.btn--youtube {
+  background-color: #d71515;
+  border-radius: 10px;
+}
+
+.btn--instagram {
+  background-color: #dc8f00;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -449,7 +582,7 @@ nav {
   .milan h1, .dosreyes h1, .plazajujuy h1, .rideamus h1 {
     margin: 270px auto 0;
   }
-  .hotel a {
+  .hotel a, .hoteles .hotel a {
     text-decoration: none;
   }
   .milan h1:hover, .dosreyes h1:hover, .plazajujuy h1:hover, .rideamus h1:hover {

@@ -1,0 +1,6 @@
+agregado de keywords y description, title para el SEO.
+incluye condicional en clase "trabajos".
+se agregó una operación en el e margin de la clase "publicidadtres" a modo ejemplo.
+agregado de bucle en la pagina "contactos"
+se utilizó el ejemplo "Maps" de la clase, ya que el sitio contenía redes sociales, y se agrego en cada ancla de redes sumando la de Youtube.
+se afregó un Mixin en Idex en los estilos de destinos y asistencias, pero no pude agregarle parámetros porque me decía error al compilar.

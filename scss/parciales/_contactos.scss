@@ -7,3 +7,26 @@
 .row-contactos{
     padding: 0 100px;
 }
+.col-ofertas{
+    display: flex;
+    justify-content: space-around;
+    @for $i from 1 through 4{
+        .col-#{$i}{
+        width:20%;
+        height: 50px;
+        margin: 5px;
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 25px;
+        border: solid 1px black;
+
+        a{
+            color: #000;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    
+    }
+}
+}

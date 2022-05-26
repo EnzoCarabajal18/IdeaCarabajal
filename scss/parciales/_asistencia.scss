@@ -1,7 +1,8 @@
-.item{
+@mixin item {
     margin: 15px 0;
     padding: 20px;
     text-align: center;
+    border-radius: 10px;
     &:hover{
         background: black;
         color: #fff;
@@ -9,4 +10,15 @@
         max-width: 100%;
     } 
 }
-
+.item-1{
+    @include item;
+}
+.item-2{
+    @include item;
+}
+.item-3{
+    @include item;
+}
+.item-4{
+    @include item;
+}

@@ -50,11 +50,14 @@
 .villagesell{
     background: url(../images/villagesell.jpg);
 }
-.mardelplata, .bariloche, .jujuy, .villagesell{
+@mixin destinos {
     border-radius: 15px;
     background-size: $background-size;
     background-position: $background-position;
     height: $height;
+}
+.mardelplata, .bariloche, .jujuy, .villagesell{
+    @include destinos;
 
 }
 .mardelplata a:hover, .bariloche a:hover, .jujuy a:hover, .villagesell a:hover{
