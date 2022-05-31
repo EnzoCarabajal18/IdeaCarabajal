@@ -114,10 +114,34 @@ nav {
   color: gray;
 }
 
+.col-a-pasillo {
+  background: #fff;
+  color: #000;
+  border: solid 1px;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.col-a-pasillo:hover {
+  background: black;
+  color: #fff;
+}
+
 .sec-1 {
+  display: flex;
   color: #000;
   padding: 20px 0;
   text-align: center;
+}
+
+.sec-2 {
+  display: flex;
+  color: #000;
+  padding: 20px 0;
+  text-align: center;
+  justify-content: end;
 }
 
 .pages-1 {
@@ -138,9 +162,42 @@ nav {
   padding: 50px;
 }
 
+.publicder {
+  margin: 25px;
+}
+
 .publicidad {
   display: flex;
   justify-content: center;
+}
+
+.item-publicidad {
+  width: 20%;
+  justify-content: start;
+}
+
+.col-lg-4 {
+  flex: 0 0 auto;
+  width: 25%;
+  height: 80%;
+  margin-left: auto;
+  background: gold;
+  border-radius: 15px;
+}
+
+.image-public {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.w-100 {
+  width: 100% !important;
+  margin: 20px;
+  margin-left: auto;
+}
+
+.carrousel-text {
+  margin-bottom: 50px;
 }
 
 .hotel, .hoteles .hotel {
@@ -214,7 +271,10 @@ nav {
   background-size: cover;
 }
 
-.hoteles .milan h1, .hoteles .dosreyes h1, .hoteles .plazajujuy h1, .hoteles .rideamus h1 {
+.hoteles .milan h1,
+.hoteles .dosreyes h1,
+.hoteles .plazajujuy h1,
+.hoteles .rideamus h1 {
   color: #000;
   background: #fff;
   margin: 15px;
@@ -228,7 +288,10 @@ nav {
   padding: 10px;
 }
 
-.hoteles .milan h1:hover, .hoteles .dosreyes h1:hover, .hoteles .plazajujuy h1:hover, .hoteles .rideamus h1:hover {
+.hoteles .milan h1:hover,
+.hoteles .dosreyes h1:hover,
+.hoteles .plazajujuy h1:hover,
+.hoteles .rideamus h1:hover {
   background: #000;
   color: #fff;
 }
@@ -487,7 +550,7 @@ nav {
   bottom: 0;
 }
 
-.footer .mza {
+.mza {
   display: flex;
   justify-content: center;
   margin-top: 10px;
@@ -496,14 +559,14 @@ nav {
   padding: 5px;
 }
 
-.footer .redes {
+.redes {
   justify-content: center;
   padding: 10px;
   color: #000;
   margin-bottom: 20px;
 }
 
-.footer .sitioweb {
+.sitioweb {
   color: #000;
   justify-content: inherit;
   margin-bottom: 0;
@@ -554,7 +617,10 @@ nav {
     grid-gap: 10px;
     margin: 20px;
   }
-  .mardelplata, .bariloche, .jujuy, .villagesell {
+  .mardelplata,
+  .bariloche,
+  .jujuy,
+  .villagesell {
     grid-column: 1;
   }
   .mardelplata {
@@ -577,6 +643,10 @@ nav {
     margin: 0;
     display: -webkit-inline-box;
   }
+  .col-lg-4 {
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -588,13 +658,19 @@ nav {
   .hotel:hover {
     transform: scale(1);
   }
-  .milan h1, .dosreyes h1, .plazajujuy h1, .rideamus h1 {
+  .milan h1,
+  .dosreyes h1,
+  .plazajujuy h1,
+  .rideamus h1 {
     margin: 270px auto 0;
   }
   .hotel a, .hoteles .hotel a {
     text-decoration: none;
   }
-  .milan h1:hover, .dosreyes h1:hover, .plazajujuy h1:hover, .rideamus h1:hover {
+  .milan h1:hover,
+  .dosreyes h1:hover,
+  .plazajujuy h1:hover,
+  .rideamus h1:hover {
     background: #000;
     color: #fff;
   }

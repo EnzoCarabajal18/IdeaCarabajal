@@ -1,96 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Mendoza Viajes, Ofertas, Destinos, hoteles">
-    <meta name="description" content="Mendoza Viajes es la agencia de viaje líder en Cuyo. Encontrá tu vuelo, hotel, paquete y actividades en la mejor agencia online.">
-    <title>Hoteles</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./nuevosestilos.css">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="css/estilos.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Mendoza Viajes, Ofertas, Destinos, hoteles">
+  <meta name="description"
+    content="Mendoza Viajes es la agencia de viaje líder en Cuyo. Encontrá tu vuelo, hotel, paquete y actividades en la mejor agencia online.">
+  <title>Hoteles</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./nuevosestilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-    <header>
-        <nav class="">
-            <a href="index.html"><img class="image" src="images/logo-1.jpg" alt=""></a>
-            <a href="index.html" class="menu">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="24" fill="currentColor"><path d="M18 18V7.132l-8-4.8-8 4.8V18h4v-2.75a4 4 0 1 1 8 0V18h4zm-6 2v-4.75a2 2 0 1 0-4 0V20H2a2 2 0 0 1-2-2V7.132a2 2 0 0 1 .971-1.715l8-4.8a2 2 0 0 1 2.058 0l8 4.8A2 2 0 0 1 20 7.132V18a2 2 0 0 1-2 2h-6z"></path></svg>
-              <p>Inicio</p>
-            </a> 
-            <a href="hoteles.html" class="menu">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5.5 -2 24 24" width="24" fill="currentColor"><path d="M3 0h7a3 3 0 0 1 3 3v17H0V3a3 3 0 0 1 3-3zM2 18h9V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v15zM4 4h1a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zm0 3h1a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zm0 3h1a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 3h1a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm4-9h1a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2zm0 3h1a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2zm0 3h1a1 1 0 0 1 0 2H8a1 1 0 0 1 0-2zm0 3h1a1 1 0 0 1 0 2H8a1 1 0 0 1 0-2zm-3 3h3a1 1 0 0 1 1 1v1H4v-1a1 1 0 0 1 1-1z"></path></svg>
-              <p>Hoteles</p>
-            </a>
-            <a href="trabajos.html" class="menu">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -4 24 24" width="24" fill="currentColor"><path d="M1 14h18a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2zM2 0h16a2 2 0 0 1 2 2v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V2a2 2 0 0 1 2-2zm16 11V2H2v9h16z"></path></svg>
-              <p>Trabajar en mza viajes</p>
-            </a>
-            <a href="contactos.html" class="menu">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 -2 24 24" width="24" fill="currentColor"><path d="M5.978 14.969a.38.38 0 0 1 .002-.033l-.002.033zm.001-.167a1.36 1.36 0 0 0 .001.003v-.003zm.04 1.9c2.678-2.462 3.007-2.656 3.793-2.734C13.364 13.615 16 11.01 16 8.004c0-3.26-3.085-6.003-7-6.003S2 4.745 2 8.004c0 1.893 1.175 3.767 3.054 4.957.783.495.958 1.117.941 1.778a2.548 2.548 0 0 1-.009.15c.022.33.032.92.033 1.814zm3.99-.743c-.185.018-1.625 1.276-4.32 3.774a1 1 0 0 1-1.68-.742c.02-2.362.011-3.709-.024-4.04-.018-.173.032-.28 0-.3C1.708 13.212 0 10.775 0 8.005 0 3.584 4.03 0 9 0s9 3.584 9 8.004c0 4.117-3.495 7.509-7.99 7.955z"></path><circle cx="12" cy="8" r="2"></circle><circle cx="6" cy="8" r="2"></circle></svg>
-              <p>Contactos</p>
-            </a>
-            <a href="asistencias.html" class="menu">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.5 -1.5 24 24" width="24" fill="currentColor"><path d="M10.725 9.094l-5.509 5.51-1.87-.777-.167.169 2.38 1.587 1.588 2.38.168-.168-.776-1.87 5.509-5.508 4.328 6.252.21-.208-2.887-7.696 4.4-4.398a.935.935 0 0 0-1.323-1.323l-4.4 4.399-7.694-2.886-.21.209 6.253 4.328zm5.39 10.483l-4.33-6.253-3.04 3.04.777 1.87-2.666 2.665-2.645-3.967-3.968-2.646 2.666-2.666 1.869.776 3.04-3.04-6.253-4.328 2.646-2.645 7.695 2.885 3.547-3.547a2.806 2.806 0 1 1 3.968 3.968l-3.547 3.547 2.886 7.696-2.646 2.645z"></path></svg>
-              <p>Asistencias</p>
-            </a>
-        </nav>
-    </header>
-    <main>
-     <section class="public">
-        <div>
-        <h3 class="publicidadtres">Nuestra Agencia Mendoza Viajes, ha sido creada en base a la experiencia de más de 17 años en el mercado del turismo por parte de su fundadora , ha llegado para entregar al pasajero mucho más que la venta de un servicio, si no el de crear y diseñar experiencias de viajes, acompañadas de asesoría, personalización, calidad y precio.</h3>
-        </div>
+  <header>
+    <nav class="">
+      <a href="index.html"><img class="image" src="images/logo-1.jpg" alt=""></a>
+      <a href="index.html" class="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="24" fill="currentColor">
+          <path
+            d="M18 18V7.132l-8-4.8-8 4.8V18h4v-2.75a4 4 0 1 1 8 0V18h4zm-6 2v-4.75a2 2 0 1 0-4 0V20H2a2 2 0 0 1-2-2V7.132a2 2 0 0 1 .971-1.715l8-4.8a2 2 0 0 1 2.058 0l8 4.8A2 2 0 0 1 20 7.132V18a2 2 0 0 1-2 2h-6z">
+          </path>
+        </svg>
+        <p>Inicio</p>
+      </a>
+      <a href="hoteles.html" class="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5.5 -2 24 24" width="24" fill="currentColor">
+          <path
+            d="M3 0h7a3 3 0 0 1 3 3v17H0V3a3 3 0 0 1 3-3zM2 18h9V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v15zM4 4h1a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zm0 3h1a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zm0 3h1a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 3h1a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm4-9h1a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2zm0 3h1a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2zm0 3h1a1 1 0 0 1 0 2H8a1 1 0 0 1 0-2zm0 3h1a1 1 0 0 1 0 2H8a1 1 0 0 1 0-2zm-3 3h3a1 1 0 0 1 1 1v1H4v-1a1 1 0 0 1 1-1z">
+          </path>
+        </svg>
+        <p>Hoteles</p>
+      </a>
+      <a href="trabajos.html" class="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -4 24 24" width="24" fill="currentColor">
+          <path
+            d="M1 14h18a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2zM2 0h16a2 2 0 0 1 2 2v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V2a2 2 0 0 1 2-2zm16 11V2H2v9h16z">
+          </path>
+        </svg>
+        <p>Trabajar en mza viajes</p>
+      </a>
+      <a href="contactos.html" class="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 -2 24 24" width="24" fill="currentColor">
+          <path
+            d="M5.978 14.969a.38.38 0 0 1 .002-.033l-.002.033zm.001-.167a1.36 1.36 0 0 0 .001.003v-.003zm.04 1.9c2.678-2.462 3.007-2.656 3.793-2.734C13.364 13.615 16 11.01 16 8.004c0-3.26-3.085-6.003-7-6.003S2 4.745 2 8.004c0 1.893 1.175 3.767 3.054 4.957.783.495.958 1.117.941 1.778a2.548 2.548 0 0 1-.009.15c.022.33.032.92.033 1.814zm3.99-.743c-.185.018-1.625 1.276-4.32 3.774a1 1 0 0 1-1.68-.742c.02-2.362.011-3.709-.024-4.04-.018-.173.032-.28 0-.3C1.708 13.212 0 10.775 0 8.005 0 3.584 4.03 0 9 0s9 3.584 9 8.004c0 4.117-3.495 7.509-7.99 7.955z">
+          </path>
+          <circle cx="12" cy="8" r="2"></circle>
+          <circle cx="6" cy="8" r="2"></circle>
+        </svg>
+        <p>Contactos</p>
+      </a>
+      <a href="asistencias.html" class="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.5 -1.5 24 24" width="24" fill="currentColor">
+          <path
+            d="M10.725 9.094l-5.509 5.51-1.87-.777-.167.169 2.38 1.587 1.588 2.38.168-.168-.776-1.87 5.509-5.508 4.328 6.252.21-.208-2.887-7.696 4.4-4.398a.935.935 0 0 0-1.323-1.323l-4.4 4.399-7.694-2.886-.21.209 6.253 4.328zm5.39 10.483l-4.33-6.253-3.04 3.04.777 1.87-2.666 2.665-2.645-3.967-3.968-2.646 2.666-2.666 1.869.776 3.04-3.04-6.253-4.328 2.646-2.645 7.695 2.885 3.547-3.547a2.806 2.806 0 1 1 3.968 3.968l-3.547 3.547 2.886 7.696-2.646 2.645z">
+          </path>
+        </svg>
+        <p>Asistencias</p>
+      </a>
+    </nav>
+  </header>
+  <main>
+    <section class="public">
+      <div>
+        <h3 class="publicidadtres">Nuestra Agencia Mendoza Viajes, ha sido creada en base a la experiencia de más de 17
+          años en el mercado del turismo por parte de su fundadora , ha llegado para entregar al pasajero mucho más que
+          la venta de un servicio, si no el de crear y diseñar experiencias de viajes, acompañadas de asesoría,
+          personalización, calidad y precio.</h3>
+      </div>
     </section>
     <section>
-        <nav class="video-public">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/K5De_XlWdc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         </nav>
+      <nav class="video-public">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/K5De_XlWdc4" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </nav>
     </section>
 
-     <section class="hoteles">
-        <div class="dosreyes hotel">
-            <a href="" class=""><h1 class="texto">VER MÁS</h1></a>
-        </div>
-        <div class="milan hotel">
-             <a href="" class=""><h1 class="texto">VER MÁS</h1></a>
-        </div>
-        <div class="hoteles-names plazajujuy hotel">
-            <a href="" class=""><h1 class="texto">VER MÁS</h1></a>
-        </div>
-        <div class="rideamus hotel">
-            <a href="" class=""><h1 class="texto">VER MÁS</h1></a>
-        </div>
+    <section class="hoteles">
+      <div class="dosreyes hotel">
+        <a href="" class="">
+          <h1 class="texto">VER MÁS</h1>
+        </a>
+      </div>
+      <div class="milan hotel">
+        <a href="" class="">
+          <h1 class="texto">VER MÁS</h1>
+        </a>
+      </div>
+      <div class="hoteles-names plazajujuy hotel">
+        <a href="" class="">
+          <h1 class="texto">VER MÁS</h1>
+        </a>
+      </div>
+      <div class="rideamus hotel">
+        <a href="" class="">
+          <h1 class="texto">VER MÁS</h1>
+        </a>
+      </div>
     </section>
     <section>
-        <div class="publicidad">
-            <img src="images/previaje.jpg" class="img-fluid" alt="...">                     
-        </div>
+      <div class="publicidad">
+        <img src="images/previaje.jpg" class="img-fluid" alt="...">
+      </div>
     </section>
     <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item"><a class="page-link" href="index.html">Previous</a></li>
-          <li class="page-item"><a class="page-link" href="index.html">1</a></li>
-          <li class="page-item"><a class="page-link" href="hoteles.html">2</a></li>
-          <li class="page-item"><a class="page-link" href="trabajos.html">3</a></li>
-          <li class="page-item"><a class="page-link" href="contactos.html">4</a></li>
-          <li class="page-item"><a class="page-link" href="asistencias.html">5</a></li>
-          <li class="page-item"><a class="page-link" href="trabajos.html">Next</a></li>
-        </ul>
-      </nav>
-</main>
-<footer>
-  <div class="footer">
-    <h2 class="mza">Mza Viajes</h2>
-    <a href="https://www.facebook.com/" class="redes btn--facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-7 -2 24 24" width="24" fill="currentColor"><path d="M2.046 3.865v2.748H.032v3.36h2.014v9.986H6.18V9.974h2.775s.26-1.611.386-3.373H6.197V4.303c0-.343.45-.805.896-.805h2.254V0H6.283c-4.34 0-4.237 3.363-4.237 3.865z"></path></svg></a>
-    <a href="https://www.instagram.com/" class="redes btn--instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="24" fill="currentColor"><path d="M14.017 0h-8.07A5.954 5.954 0 0 0 0 5.948v8.07a5.954 5.954 0 0 0 5.948 5.947h8.07a5.954 5.954 0 0 0 5.947-5.948v-8.07A5.954 5.954 0 0 0 14.017 0zm3.94 14.017a3.94 3.94 0 0 1-3.94 3.94h-8.07a3.94 3.94 0 0 1-3.939-3.94v-8.07a3.94 3.94 0 0 1 3.94-3.939h8.07a3.94 3.94 0 0 1 3.939 3.94v8.07z"></path><path d="M9.982 4.819A5.17 5.17 0 0 0 4.82 9.982a5.17 5.17 0 0 0 5.163 5.164 5.17 5.17 0 0 0 5.164-5.164A5.17 5.17 0 0 0 9.982 4.82zm0 8.319a3.155 3.155 0 1 1 0-6.31 3.155 3.155 0 0 1 0 6.31z"></path><circle cx="15.156" cy="4.858" r="1.237"></circle></svg></a>
-    <a href="https://www.youtube.com/" class="redes btn--youtube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -5 24 24" width="24" fill="currentColor"><path d="M15.812.017H4.145C1.855.017 0 1.852 0 4.116v5.768c0 2.264 1.856 4.1 4.145 4.1h11.667c2.29 0 4.145-1.836 4.145-4.1V4.116c0-2.264-1.856-4.1-4.145-4.1zM13.009 7.28L7.552 9.855a.219.219 0 0 1-.314-.196V4.35c0-.161.173-.266.318-.193l5.458 2.735a.216.216 0 0 1-.005.389z"></path></svg></a>
-    <a href="https://twitter.com/" class="redes btn--twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -4 24 24" width="24" fill="currentColor"><path d="M20 1.907a8.292 8.292 0 0 1-2.356.637A4.07 4.07 0 0 0 19.448.31a8.349 8.349 0 0 1-2.607.98A4.12 4.12 0 0 0 13.846.015c-2.266 0-4.103 1.81-4.103 4.04 0 .316.036.625.106.92A11.708 11.708 0 0 1 1.393.754a3.964 3.964 0 0 0-.554 2.03c0 1.403.724 2.64 1.824 3.363A4.151 4.151 0 0 1 .805 5.64v.05c0 1.958 1.415 3.591 3.29 3.963a4.216 4.216 0 0 1-1.08.141c-.265 0-.522-.025-.773-.075a4.098 4.098 0 0 0 3.832 2.807 8.312 8.312 0 0 1-5.095 1.727c-.332 0-.658-.02-.979-.056a11.727 11.727 0 0 0 6.289 1.818c7.547 0 11.673-6.157 11.673-11.496l-.014-.523A8.126 8.126 0 0 0 20 1.907z"></path></svg></a>
-    <p class="sitioweb">www.mzaviajes.com.ar</p>
-</div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="index.html">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="hoteles.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="trabajos.html">3</a></li>
+        <li class="page-item"><a class="page-link" href="contactos.html">4</a></li>
+        <li class="page-item"><a class="page-link" href="asistencias.html">5</a></li>
+        <li class="page-item"><a class="page-link" href="trabajos.html">Next</a></li>
+      </ul>
+    </nav>
+  </main>
+  <footer>
+    <div class="footer">
+      <h2 class="mza">Mza Viajes</h2>
+      <a href="https://www.facebook.com/" class="redes btn--facebook"><svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="-7 -2 24 24" width="24" fill="currentColor">
+          <path
+            d="M2.046 3.865v2.748H.032v3.36h2.014v9.986H6.18V9.974h2.775s.26-1.611.386-3.373H6.197V4.303c0-.343.45-.805.896-.805h2.254V0H6.283c-4.34 0-4.237 3.363-4.237 3.865z">
+          </path>
+        </svg></a>
+      <a href="https://www.instagram.com/" class="redes btn--instagram"><svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="-2 -2 24 24" width="24" fill="currentColor">
+          <path
+            d="M14.017 0h-8.07A5.954 5.954 0 0 0 0 5.948v8.07a5.954 5.954 0 0 0 5.948 5.947h8.07a5.954 5.954 0 0 0 5.947-5.948v-8.07A5.954 5.954 0 0 0 14.017 0zm3.94 14.017a3.94 3.94 0 0 1-3.94 3.94h-8.07a3.94 3.94 0 0 1-3.939-3.94v-8.07a3.94 3.94 0 0 1 3.94-3.939h8.07a3.94 3.94 0 0 1 3.939 3.94v8.07z">
+          </path>
+          <path
+            d="M9.982 4.819A5.17 5.17 0 0 0 4.82 9.982a5.17 5.17 0 0 0 5.163 5.164 5.17 5.17 0 0 0 5.164-5.164A5.17 5.17 0 0 0 9.982 4.82zm0 8.319a3.155 3.155 0 1 1 0-6.31 3.155 3.155 0 0 1 0 6.31z">
+          </path>
+          <circle cx="15.156" cy="4.858" r="1.237"></circle>
+        </svg></a>
+      <a href="https://www.youtube.com/" class="redes btn--youtube"><svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="-2 -5 24 24" width="24" fill="currentColor">
+          <path
+            d="M15.812.017H4.145C1.855.017 0 1.852 0 4.116v5.768c0 2.264 1.856 4.1 4.145 4.1h11.667c2.29 0 4.145-1.836 4.145-4.1V4.116c0-2.264-1.856-4.1-4.145-4.1zM13.009 7.28L7.552 9.855a.219.219 0 0 1-.314-.196V4.35c0-.161.173-.266.318-.193l5.458 2.735a.216.216 0 0 1-.005.389z">
+          </path>
+        </svg></a>
+      <a href="https://twitter.com/" class="redes btn--twitter"><svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="-2 -4 24 24" width="24" fill="currentColor">
+          <path
+            d="M20 1.907a8.292 8.292 0 0 1-2.356.637A4.07 4.07 0 0 0 19.448.31a8.349 8.349 0 0 1-2.607.98A4.12 4.12 0 0 0 13.846.015c-2.266 0-4.103 1.81-4.103 4.04 0 .316.036.625.106.92A11.708 11.708 0 0 1 1.393.754a3.964 3.964 0 0 0-.554 2.03c0 1.403.724 2.64 1.824 3.363A4.151 4.151 0 0 1 .805 5.64v.05c0 1.958 1.415 3.591 3.29 3.963a4.216 4.216 0 0 1-1.08.141c-.265 0-.522-.025-.773-.075a4.098 4.098 0 0 0 3.832 2.807 8.312 8.312 0 0 1-5.095 1.727c-.332 0-.658-.02-.979-.056a11.727 11.727 0 0 0 6.289 1.818c7.547 0 11.673-6.157 11.673-11.496l-.014-.523A8.126 8.126 0 0 0 20 1.907z">
+          </path>
+        </svg></a>
+      <p class="sitioweb">www.mzaviajes.com.ar</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

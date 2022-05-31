@@ -1,46 +1,50 @@
-.footer{ 
+.footer {
     margin: 0;
     padding: 20px;
-    background:$background-fotter;   
+    background: $background-fotter;
     background-position: center;
     font-family: sans-serif;
-    text-align:center ;
+    text-align: center;
     bottom: 0;
-    .mza{display: flex;
-        justify-content:center;
+}
+
+.mza {
+        display: flex;
+        justify-content: center;
         margin-top: 10px;
         font-family: cursive;
         color: black;
         padding: 5px;
-    }
-    .redes{
+}
+
+.redes {
         justify-content: center;
         padding: 10px;
         color: #000;
         margin-bottom: 20px;
-    }
-    .sitioweb {
+}
+
+.sitioweb {
         color: #000;
         justify-content: inherit;
         margin-bottom: 0;
         padding: 5px;
-      }
 }
 
 
-$redes: ( 
-        twitter: #55acee,
-        facebook:  #3a5795,
-        youtube: #d71515,
-        instagram: #dc8f00,
+$redes: (
+    twitter: #55acee,
+    facebook: #3a5795,
+    youtube: #d71515,
+    instagram: #dc8f00,
 
-); 
+);
 
-@each $red, $color in $redes {
-   .btn--#{$red} {
-       background-color: $color;
-       border-radius: 10px;
-       border: solid 0.5px
-   }
+@each $red,
+$color in $redes {
+    .btn--#{$red} {
+        background-color: $color;
+        border-radius: 10px;
+        border: solid 0.5px
+    }
 }
-

@@ -1,10 +1,11 @@
-.hotel{
+.hotel {
     background-size: cover;
     background-position: center;
     grid-column: 1/4;
     transition: transform 1s;
     border-radius: 15px;
 }
+
 @mixin hoteles-item {
     color: #000;
     background: #fff;
@@ -18,158 +19,195 @@
     text-decoration: none;
     padding: 10px;
 }
-.hoteles{
+
+.hoteles {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(4, 350px);
     grid-gap: 30px;
     margin: 0 150px;
     margin-bottom: 30px;
-    &{
+
+    & {
         -webkit-animation: wobble-hor-top 0.8s both;
         animation: wobble-hor-top 0.8s both;
         border-radius: 15px;
     }
+
     @-webkit-keyframes wobble-hor-top {
+
         0%,
         100% {
-          -webkit-transform: translateX(0%);
-                  transform: translateX(0%);
-          -webkit-transform-origin: 50% 50%;
-                  transform-origin: 50% 50%;
+            -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
         }
+
         15% {
-          -webkit-transform: translateX(-30px) rotate(6deg);
-                  transform: translateX(-30px) rotate(6deg);
+            -webkit-transform: translateX(-30px) rotate(6deg);
+            transform: translateX(-30px) rotate(6deg);
         }
+
         30% {
-          -webkit-transform: translateX(15px) rotate(-6deg);
-                  transform: translateX(15px) rotate(-6deg);
+            -webkit-transform: translateX(15px) rotate(-6deg);
+            transform: translateX(15px) rotate(-6deg);
         }
+
         45% {
-          -webkit-transform: translateX(-15px) rotate(3.6deg);
-                  transform: translateX(-15px) rotate(3.6deg);
+            -webkit-transform: translateX(-15px) rotate(3.6deg);
+            transform: translateX(-15px) rotate(3.6deg);
         }
+
         60% {
-          -webkit-transform: translateX(9px) rotate(-2.4deg);
-                  transform: translateX(9px) rotate(-2.4deg);
+            -webkit-transform: translateX(9px) rotate(-2.4deg);
+            transform: translateX(9px) rotate(-2.4deg);
         }
+
         75% {
-          -webkit-transform: translateX(-6px) rotate(1.2deg);
-                  transform: translateX(-6px) rotate(1.2deg);
+            -webkit-transform: translateX(-6px) rotate(1.2deg);
+            transform: translateX(-6px) rotate(1.2deg);
         }
     }
-    .dosreyes{ 
-        background: url(../images/hoteldosreyes.webp); 
+
+    .dosreyes {
+        background: url(../images/hoteldosreyes.webp);
     }
-    .milan{
+
+    .milan {
         background: url(../images/hotelmilan.jpg);
 
     }
-    .plazajujuy{
+
+    .plazajujuy {
         background: url(../images/hotelplazajujuy.jpg);
         background-size: cover;
     }
-    .rideamus{
+
+    .rideamus {
         background: url(../images/rideamus.png);
         background-size: cover;
-        }
-        .milan h1, .dosreyes h1, .plazajujuy h1, .rideamus h1{
-            @include hoteles-item;
-        }
-        .milan h1:hover, .dosreyes h1:hover, .plazajujuy h1:hover, .rideamus h1:hover{
-            background: #000;
-            color: #fff;
-        }
-    .hotel{
-        @extend .hotel;
-        .hotel a{
-            text-decoration: none; 
-    
     }
+
+    .milan h1,
+    .dosreyes h1,
+    .plazajujuy h1,
+    .rideamus h1 {
+        @include hoteles-item;
+    }
+
+    .milan h1:hover,
+    .dosreyes h1:hover,
+    .plazajujuy h1:hover,
+    .rideamus h1:hover {
+        background: #000;
+        color: #fff;
+    }
+
+    .hotel {
+        @extend .hotel;
+
+        .hotel a {
+            text-decoration: none;
+
+        }
     }
 }
-.img-fluid{
-        -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-        animation: heartbeat 1.5s ease-in-out infinite both;
-    }
+
+.img-fluid {
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
 @-webkit-keyframes heartbeat {
     from {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: center center;  
-              transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;   
-    animation-timing-function: ease-out;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
+
     10% {
-    -webkit-transform: scale(0.91);
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
     }
+
     17% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
+
     33% {
-    -webkit-transform: scale(0.87);
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
     }
+
     45% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
 }
- @keyframes heartbeat {
+
+@keyframes heartbeat {
     from {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
+
     10% {
-    -webkit-transform: scale(0.91);
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
     }
+
     17% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
+
     33% {
-    -webkit-transform: scale(0.87);
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
     }
+
     45% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
 }
-.public{
+
+.public {
     display: flex;
-    margin:20 150px;
-    .publicidadtres{
+    margin: 20 150px;
+
+    .publicidadtres {
         padding: 0 25px;
-        margin:($margin)-10 30px;
+        margin: ($margin)-10 30px;
     }
 }
-.comentario{
+
+.comentario {
     display: flex;
     background: cornflowerblue;
     justify-content: center;

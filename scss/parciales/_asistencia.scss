@@ -3,26 +3,31 @@
     padding: 20px;
     text-align: center;
     border-radius: 10px;
-    &:hover{
+
+    &:hover {
         background: black;
         color: #fff;
         transform: scale(1.05);
         max-width: 100%;
-    } 
+    }
 }
-.item-1{
+
+.item-1 {
     @include item;
-    background: map-get($estilos,  background1);
+    background: map-get($estilos, background1);
 }
-.item-2{
+
+.item-2 {
     @include item;
-    background: map-get($estilos,  background2);
+    background: map-get($estilos, background2);
 }
-.item-3{
+
+.item-3 {
     @include item;
-    background: map-get($estilos,  background1);
+    background: map-get($estilos, background1);
 }
-.item-4{
+
+.item-4 {
     @include item;
-    background: map-get($estilos,  background2);
+    background: map-get($estilos, background2);
 }

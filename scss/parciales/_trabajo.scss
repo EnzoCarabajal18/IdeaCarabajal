@@ -1,7 +1,9 @@
-.t-1{
-    @if $t-1==listado{
-    margin: 100px 100px;
-    } @else if $t-1==lista{
+.t-1 {
+    @if $t-1==listado {
+        margin: 100px 100px;
+    }
+
+    @else if $t-1==lista {
         margin: 20px 100px;
     }
 }

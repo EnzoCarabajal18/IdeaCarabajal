@@ -1,54 +1,63 @@
-.row-index{
+.row-index {
     border: solid 0.5px;
     border-radius: 15px;
     margin-top: 5px;
-    &{
+
+& {
         -webkit-animation: wobble-hor-top 0.8s both;
         animation: wobble-hor-top 0.8s both;
         border-radius: 15px;
-    }
-    @-webkit-keyframes wobble-hor-top {
+}
+
+@-webkit-keyframes wobble-hor-top {
+
         0%,
         100% {
-          -webkit-transform: translateX(0%);
-                  transform: translateX(0%);
-          -webkit-transform-origin: 50% 50%;
-                  transform-origin: 50% 50%;
+            -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
         }
+
         15% {
-          -webkit-transform: translateX(-30px) rotate(6deg);
-                  transform: translateX(-30px) rotate(6deg);
+            -webkit-transform: translateX(-30px) rotate(6deg);
+            transform: translateX(-30px) rotate(6deg);
         }
+
         30% {
-          -webkit-transform: translateX(15px) rotate(-6deg);
-                  transform: translateX(15px) rotate(-6deg);
+            -webkit-transform: translateX(15px) rotate(-6deg);
+            transform: translateX(15px) rotate(-6deg);
         }
+
         45% {
-          -webkit-transform: translateX(-15px) rotate(3.6deg);
-                  transform: translateX(-15px) rotate(3.6deg);
+            -webkit-transform: translateX(-15px) rotate(3.6deg);
+            transform: translateX(-15px) rotate(3.6deg);
         }
+
         60% {
-          -webkit-transform: translateX(9px) rotate(-2.4deg);
-                  transform: translateX(9px) rotate(-2.4deg);
+            -webkit-transform: translateX(9px) rotate(-2.4deg);
+            transform: translateX(9px) rotate(-2.4deg);
         }
+
         75% {
-          -webkit-transform: translateX(-6px) rotate(1.2deg);
-                  transform: translateX(-6px) rotate(1.2deg);
+            -webkit-transform: translateX(-6px) rotate(1.2deg);
+            transform: translateX(-6px) rotate(1.2deg);
         }
     }
 }
 
-$destinos-1: ( 
+$destinos-1:(
     mardelplata: url(../images/mdp.jpg),
     bariloche: url(../images/bariloche.webp),
     jujuy: url(../images/jujuy.webp),
     villagesell: url(../images/villagesell.jpg)
-); 
+);
 
-@each $destino, $background in $destinos-1 {
-   .btn-#{$destino} {
-       background: $background;
-   }
+@each $destino,
+$background in $destinos-1 {
+    .btn-#{$destino} {
+        background: $background;
+    }
 }
 
 @mixin destinos {
@@ -57,46 +66,110 @@ $destinos-1: (
     background-position: $background-position;
     height: $height;
 }
-.btn-mardelplata, .btn-bariloche, .btn-jujuy, .btn-villagesell{
+
+.btn-mardelplata, .btn-bariloche, .btn-jujuy, .btn-villagesell {
     @include destinos;
 
 }
-.mardelplata a:hover, .bariloche a:hover, .jujuy a:hover, .villagesell a:hover{
+
+.mardelplata a:hover, .bariloche a:hover, .jujuy a:hover, .villagesell a:hover {
     color: white;
     background: #444343;
 }
 
-.col-a{
+.col-a {
     color: #fff;
     background: #000;
     text-decoration: none;
     padding: 1px 25px;
     font-size: 20px;
     border-radius: 40px;
-    &:hover{
+
+    &:hover {
         color: gray;
     }
+
+    &-pasillo {
+        background: #fff;
+        color: #000;
+        border: solid 1px;
+        border-radius: 25px;
+        padding: 10px;
+        font-size: 2rem;
+        text-decoration: none;
+        &:hover{
+            background: black;
+            color: #fff;
+        }
+    }
+    
+
 }
-.sec-1{
+
+.sec-1 {
+    display: flex;
     color: #000;
     padding: 20px 0;
     text-align: center;
+
 }
-.pages-1{
+
+.sec-2 {
+    display: flex;
+    color: #000;
+    padding: 20px 0;
+    text-align: center;
+
+    justify-content: end;
+}
+
+.pages-1 {
     background: white;
 }
-.col h3{
+
+.col h3 {
     margin: 20px;
 }
-.text-1{
+
+.text-1 {
     font-size: 3rem;
     text-align: center;
 }
-.text-2{
+
+.text-2 {
     font-size: 2rem;
     padding: 50px;
 }
-.publicidad{
+.publicder{
+    margin: 25px;
+}
+.publicidad {
     display: flex;
-justify-content: center;
+    justify-content: center;
+}
+
+.item-publicidad {
+    width: 20%;
+    justify-content: start;
+}
+
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 25%;
+    height: 80%;
+    margin-left: auto;
+    background: gold;
+    border-radius: 15px;
+}
+.image-public{
+    width: 100%;
+    border-radius: 25px;
+}
+.w-100{
+    width: 100%!important;
+    margin: 20px;
+    margin-left: auto;
+}
+.carrousel-text{
+    margin-bottom: 50px;
 }
