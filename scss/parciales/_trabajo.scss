@@ -7,3 +7,12 @@
         margin: 20px 100px;
     }
 }
+.btn-primary{
+    color: #fff;
+    background-color: gold;
+    border-color: #000;
+   
+    &:hover {
+        background: rgb(148, 112, 18);
+    }
+}

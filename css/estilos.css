@@ -17,7 +17,7 @@ nav {
   position: sticky;
 }
 
-.btn {
+.btn-2 {
   display: none;
 }
 
@@ -210,9 +210,13 @@ nav {
   margin-bottom: 50px;
 }
 
-.image-mdp {
-  width: 10%;
-  height: 20%;
+.menu-site {
+  position: sticky;
+  top: 0;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1;
 }
 
 .hotel, .hoteles .hotel {
@@ -408,12 +412,18 @@ nav {
   margin: 0 388px;
 }
 
-.col-der-hotel {
-  background: red;
-}
-
 .t-1 {
   margin: 20px 100px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: gold;
+  border-color: #000;
+}
+
+.btn-primary:hover {
+  background: #947012;
 }
 
 .itemconsultas {
@@ -673,7 +683,7 @@ nav {
   .col-ofertas {
     display: table;
   }
-  .btn {
+  .btn-2 {
     display: inline-block;
     background: gold;
     margin: 10px;
@@ -683,6 +693,15 @@ nav {
   }
   .publicidadtres {
     font-size: 1rem;
+  }
+  .itemconsultas {
+    padding: 0;
+  }
+  .t-1 {
+    margin: 20px 20px;
+  }
+  .informacon {
+    padding: 0;
   }
 }
 
