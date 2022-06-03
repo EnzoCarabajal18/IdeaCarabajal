@@ -15,12 +15,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/estilos.css">
 </head>
-
 <body>
   <header>
-    <nav class="">
+    <nav class="nav">
       <a href="index.html"><img class="image" src="images/logo-1.jpg" alt=""></a>
-      <a href="index.html" class="menu">
+      <button type="button" class="btn btn-light" onclick="accion()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -7 24 24" width="24" fill="currentColor"><path d="M1 0h5a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2zm7 8h5a1 1 0 0 1 0 2H8a1 1 0 1 1 0-2zM1 4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2z"></path></svg> Menú</button>
+      <a href="index.html" class="menu on-off">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="24" fill="currentColor">
           <path
             d="M18 18V7.132l-8-4.8-8 4.8V18h4v-2.75a4 4 0 1 1 8 0V18h4zm-6 2v-4.75a2 2 0 1 0-4 0V20H2a2 2 0 0 1-2-2V7.132a2 2 0 0 1 .971-1.715l8-4.8a2 2 0 0 1 2.058 0l8 4.8A2 2 0 0 1 20 7.132V18a2 2 0 0 1-2 2h-6z">
@@ -28,7 +28,7 @@
         </svg>
         <p>Inicio</p>
       </a>
-      <a href="hoteles.html" class="menu">
+      <a href="hoteles.html" class="menu on-off">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5.5 -2 24 24" width="24" fill="currentColor">
           <path
             d="M3 0h7a3 3 0 0 1 3 3v17H0V3a3 3 0 0 1 3-3zM2 18h9V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v15zM4 4h1a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zm0 3h1a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zm0 3h1a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 3h1a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm4-9h1a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2zm0 3h1a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2zm0 3h1a1 1 0 0 1 0 2H8a1 1 0 0 1 0-2zm0 3h1a1 1 0 0 1 0 2H8a1 1 0 0 1 0-2zm-3 3h3a1 1 0 0 1 1 1v1H4v-1a1 1 0 0 1 1-1z">
@@ -36,7 +36,7 @@
         </svg>
         <p>Hoteles</p>
       </a>
-      <a href="trabajos.html" class="menu">
+      <a href="trabajos.html" class="menu on-off">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -4 24 24" width="24" fill="currentColor">
           <path
             d="M1 14h18a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2zM2 0h16a2 2 0 0 1 2 2v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V2a2 2 0 0 1 2-2zm16 11V2H2v9h16z">
@@ -44,7 +44,7 @@
         </svg>
         <p>Trabajar en mza viajes</p>
       </a>
-      <a href="contactos.html" class="menu">
+      <a href="contactos.html" class="menu on-off">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 -2 24 24" width="24" fill="currentColor">
           <path
             d="M5.978 14.969a.38.38 0 0 1 .002-.033l-.002.033zm.001-.167a1.36 1.36 0 0 0 .001.003v-.003zm.04 1.9c2.678-2.462 3.007-2.656 3.793-2.734C13.364 13.615 16 11.01 16 8.004c0-3.26-3.085-6.003-7-6.003S2 4.745 2 8.004c0 1.893 1.175 3.767 3.054 4.957.783.495.958 1.117.941 1.778a2.548 2.548 0 0 1-.009.15c.022.33.032.92.033 1.814zm3.99-.743c-.185.018-1.625 1.276-4.32 3.774a1 1 0 0 1-1.68-.742c.02-2.362.011-3.709-.024-4.04-.018-.173.032-.28 0-.3C1.708 13.212 0 10.775 0 8.005 0 3.584 4.03 0 9 0s9 3.584 9 8.004c0 4.117-3.495 7.509-7.99 7.955z">
@@ -54,7 +54,7 @@
         </svg>
         <p>Contactos</p>
       </a>
-      <a href="asistencias.html" class="menu">
+      <a href="asistencias.html" class="menu on-off">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.5 -1.5 24 24" width="24" fill="currentColor">
           <path
             d="M10.725 9.094l-5.509 5.51-1.87-.777-.167.169 2.38 1.587 1.588 2.38.168-.168-.776-1.87 5.509-5.508 4.328 6.252.21-.208-2.887-7.696 4.4-4.398a.935.935 0 0 0-1.323-1.323l-4.4 4.399-7.694-2.886-.21.209 6.253 4.328zm5.39 10.483l-4.33-6.253-3.04 3.04.777 1.87-2.666 2.665-2.645-3.967-3.968-2.646 2.666-2.666 1.869.776 3.04-3.04-6.253-4.328 2.646-2.645 7.695 2.885 3.547-3.547a2.806 2.806 0 1 1 3.968 3.968l-3.547 3.547 2.886 7.696-2.646 2.645z">
@@ -158,6 +158,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+    <script>
+      function accion(){
+        console.log('funcionando');
+        var desplaza = document.getElementsByClassName('menu');
+        for(var i = 0; i < desplaza.length; i++){
+          desplaza[i].classList.toggle('on-off');
+        }
+      }
+    </script>
 </body>
-
 </html>

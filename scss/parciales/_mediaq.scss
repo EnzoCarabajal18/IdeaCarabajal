@@ -1,9 +1,8 @@
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
     nav {
         flex-direction: column;
         text-align: center;
     }
-
     .ofertas {
         padding: 0 15px;
         margin: 0 auto;
@@ -58,9 +57,26 @@
         width: 100%;
         margin-top: 10px;
     }
+    .pagination{
+        justify-content: center;
+    }
+    .col-ofertas{
+    display: table;
+    }
+    .btn{
+        display: inline-block;
+        background: gold;
+        margin: 10px;
+    }
+    .on-off{
+        display: none;
+    }
+    .publicidadtres{
+        font-size: 1rem;
+    }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 992px) {
     .hoteles {
         margin: 0;
         grid-gap: 10px;
@@ -89,6 +105,12 @@
     .rideamus h1:hover {
         background: #000;
         color: #fff;
+    }
+    .col-md-12{
+        width: 100%;
+    }
+    .col-lg-4{
+        width: 100%;
     }
 }
 
@@ -190,4 +212,7 @@
     .menu {
         text-align: center;
     }
+}
+@media screen and (max-width: 1023px){
+
 }

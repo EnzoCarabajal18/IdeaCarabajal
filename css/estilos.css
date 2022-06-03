@@ -9,6 +9,16 @@ nav {
   padding: 5px;
   border-bottom: solid 15px #e8e4e4;
   border-top: solid 15px #e8e4e4;
+  position: sticky;
+}
+
+.nav {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.btn {
+  display: none;
 }
 
 .menu {
@@ -200,6 +210,11 @@ nav {
   margin-bottom: 50px;
 }
 
+.image-mdp {
+  width: 10%;
+  height: 20%;
+}
+
 .hotel, .hoteles .hotel {
   background-size: cover;
   background-position: center;
@@ -381,6 +396,7 @@ nav {
 }
 
 .public .publicidadtres {
+  opacity: 40%;
   padding: 0 25px;
   margin: 30px 30px;
 }
@@ -390,6 +406,10 @@ nav {
   background: cornflowerblue;
   justify-content: center;
   margin: 0 388px;
+}
+
+.col-der-hotel {
+  background: red;
 }
 
 .t-1 {
@@ -597,7 +617,7 @@ nav {
   border: solid 0.5px;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
   nav {
     flex-direction: column;
     text-align: center;
@@ -647,9 +667,26 @@ nav {
     width: 100%;
     margin-top: 10px;
   }
+  .pagination {
+    justify-content: center;
+  }
+  .col-ofertas {
+    display: table;
+  }
+  .btn {
+    display: inline-block;
+    background: gold;
+    margin: 10px;
+  }
+  .on-off {
+    display: none;
+  }
+  .publicidadtres {
+    font-size: 1rem;
+  }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 992px) {
   .hoteles {
     margin: 0;
     grid-gap: 10px;
@@ -673,6 +710,12 @@ nav {
   .rideamus h1:hover {
     background: #000;
     color: #fff;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-lg-4 {
+    width: 100%;
   }
 }
 

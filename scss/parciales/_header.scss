@@ -3,15 +3,21 @@ body {
         color: black;
 
 }
-
 nav {
         display: flex;
         justify-content: space-around;
         padding: 5px;
         border-bottom: solid 15px rgb(232, 228, 228);
         border-top: solid 15px rgb(232, 228, 228);
+        position: sticky;
 }
-
+.nav{
+        position: -webkit-sticky;
+        position: sticky;
+}
+.btn{
+        display: none;
+}
 .menu {
         display: inline-block;
         padding-top: 20px;

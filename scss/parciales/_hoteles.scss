@@ -202,6 +202,7 @@
     margin: 20 150px;
 
     .publicidadtres {
+        opacity: 40%;
         padding: 0 25px;
         margin: ($margin)-10 30px;
     }
@@ -212,4 +213,7 @@
     background: cornflowerblue;
     justify-content: center;
     margin: 0 388px;
+}
+.col-der-hotel{
+    background:red;
 }
