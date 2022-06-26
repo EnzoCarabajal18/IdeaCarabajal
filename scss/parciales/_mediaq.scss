@@ -47,6 +47,11 @@
     .publicidad {
         display: none;
     }
+    .public .publicidadtres {
+        opacity: 40%;
+        padding: 0;
+        margin: 0;
+    }
 
     .menu {
         padding: 0;
@@ -76,13 +81,17 @@
     }
     .itemconsultas{
         padding: 0;
+        margin: 0;
+        text-align: center;
     }
     .t-1{
         margin: 20px 20px;
     }
-    .informacon{
+    .informacion {
         padding: 0;
+        color: #000;
     }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -175,12 +184,6 @@
         margin: 0px 50px 0px 40px;
     }
 }
-
-.informacion {
-    padding: 0 100px;
-    color: #000;
-}
-
 .casillas-1 {
     display: grid;
     grid-template-columns: repeat(4, 25%);
