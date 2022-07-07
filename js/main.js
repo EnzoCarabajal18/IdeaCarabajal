@@ -19,11 +19,11 @@
 //     console.log("No puedes ingresar")
 // }
 //ejemplo clase 3
-// let numero = 1
-// while(numero < 10){
-//     console.log(numero)
-//     numero = numero + 1
-// }
+let numero = 1;
+while(numero <= 10){
+    console.log(numero);
+    numero = numero + 1
+}
 
 
 
@@ -47,26 +47,26 @@
     //};
   //}
   
-  class Persona {
-    //constructor
-    constructor(nombre, edad) {
-      this.nombre = nombre;
-      this.edad = edad;
-      this.piernas = 4;
-    }
-    //funciones
-    hablar() {
-      console.log('hola yo soy ' + (this.nombre || 'amigo') + ' tengo ' + this.piernas + ' piernas!');
-    }
-    resetear() {
-      this.nombre = '';
-      this.edad = 0;
-      this.piernas = 0;
-    }
-  }
+  // class Persona {
+  //   //constructor
+  //   constructor(nombre, edad) {
+  //     this.nombre = nombre;
+  //     this.edad = edad;
+  //     this.piernas = 4;
+  //   }
+  //   //funciones
+  //   hablar() {
+  //     console.log('hola yo soy ' + (this.nombre || 'amigo') + ' tengo ' + this.piernas + ' piernas!');
+  //   }
+  //   resetear() {
+  //     this.nombre = '';
+  //     this.edad = 0;
+  //     this.piernas = 0;
+  //   }
+  // }
   
-  const persona1 = new Persona('Homero', 39);
-  persona1.resetear();
-  persona1.hablar();
+  // const persona1 = new Persona('Homero', 39);
+  // persona1.resetear();
+  // persona1.hablar();
 
   
