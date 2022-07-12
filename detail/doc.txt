@@ -1,6 +1,2 @@
 1.Se utilizó el proyecto de desarrollo web para hacer los ejemplos de JS.
-2.Se hizo un ejemplo de cada clase aplicando un tema visto.
-3.De la clase 1 se utilizó un let y alert para mostrar un mensaje en pantalla.
-4.De la clase 2 se hizo dos ejemplos de if con else.
-5.Se ejemplificó un while de la clase 3.
-Se realizó todo en index.
+2.Se Agrego un Array para la entrega de la clase 6.
