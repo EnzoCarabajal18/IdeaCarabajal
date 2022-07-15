@@ -5,16 +5,18 @@ const descuentos = ubicacion.slice (0, 1);
 const descuentos2 = ubicacion.slice (3, 4);
 alert ("Por temporada baja " + descuentos + " y " + descuentos2 +" están en descuento");
 let precio = [34.535, 65.535, 57.535, 39.535];
-let destino = "El destino seleccionado es: ";
+let destinoElegido,precioElegido;
+agregardestino();
 function agregardestino(){
   let elegir = prompt("Seleccione el destino:\n1 - Mar del Plata\n2 - Bariloche\n3 - Jujuy\n4 - Villa Gesell\n5 - Salir");
   if(elegir == 5){
-    console.log("Cerraste el programa");
+    alert("Cerraste el programa");
   }
-  else if(5 > elegir){
+  else if((5 > elegir) && (elegir > 0)){
     for (let i = 0; i < elegir; i++){
       if(ubicacion[i] == ubicacion[elegir-1]){
-        alert("Elegiste "+ubicacion[elegir-1]+" por solo $: "+precio[elegir-1]);
+        destinoElegido = ubicacion[i];
+        precioElegido = precio[i];
       }
     }
   }
@@ -22,7 +24,16 @@ function agregardestino(){
     alert("Opción incorrecta!!!");
   }
 }
-agregardestino();
+
+function Lugar(nombreLugar, precioLugar) {
+  this.nombreLugar = nombreLugar;
+  this.precioLugar = precioLugar;
+  this.informacion = function(){ alert("La ciudad "+ this.nombreLugar +" tiene un costo de "+ this.precioLugar)}
+}
+const lugar1 = new Lugar(destinoElegido,precioElegido);
+if(destinoElegido){
+  lugar1.informacion();
+}
 function accion(){
   let desplaza = document.getElementsByClassName('menu');
   for(let i = 0; i < desplaza.length; i++){

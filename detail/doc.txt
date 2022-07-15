@@ -1,4 +1,5 @@
 1.Se utilizó el proyecto de desarrollo web para hacer los ejemplos de JS.
 2.En la página principal se solicitan datos del usuario en base a las primeras clases y se presentan promociones con descuentos en algunos destinos utilizando metodo de array. Luego con un array e if / else se solicita al usuario que agregue destino y se le devuelve el precio final.
 3.En la página "Hoteles" se hace un cálculo interno para que la empresa vea sus ganancias de finde semana.
-4.Como extra se agregó una función para desplazar el menú en versión mobile utilizando la clase "menu".
+4.dentro del Array se agregó un objeto para tomar los mismos valores y dar un solo resultado.
+5.Como extra se agregó una función para desplazar el menú en versión mobile utilizando la clase "menu".
