@@ -8,13 +8,24 @@ function accion(){
 let parrafo = document.getElementsByClassName('text-2');
 parrafo[3].textContent="Ingresá a nuestra app y obtené beneficios increibles";
 
-
 let container = document.getElementById("contenedor")
 container.innerHTML = "<p> Incluye impuestos, tasas y cargos</p>"
 
 let texto = document.querySelector(".col-12 col-md-6 #contenedor2")
 contenedor2.textContent= "25% OFF SOLO POR HOY";
 
+
+// create new element
+const elem = document.createElement('p');
+
+// add text
+elem.innerHTML = "<p> Incluye impuestos, tasas y cargos</p>, <p>hola</p>";
+
+// grab target element reference
+const target = document.querySelector('.publicidad');
+
+// insert the element before target element
+target.parentNode.insertBefore(elem, target);
 
 
 // let nombre = prompt("ingrese su nombre");
@@ -53,3 +64,4 @@ contenedor2.textContent= "25% OFF SOLO POR HOY";
 // if(destinoElegido){
 //   lugar1.informacion();
 // }
+

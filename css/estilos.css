@@ -105,6 +105,7 @@ nav {
   background-position: center;
   height: 500px;
 }
+
 .mardelplata a:hover, .bariloche a:hover, .jujuy a:hover, .villagesell a:hover {
   color: white;
   background: #444343;
@@ -627,6 +628,14 @@ nav {
   background-color: #dc8f00;
   border-radius: 10px;
   border: solid 0.5px;
+}
+
+.form-coomentario {
+  height: 100px;
+}
+
+.table-hover {
+  display: block;
 }
 
 @media screen and (max-width: 768px) {
