@@ -15,16 +15,9 @@ let texto = document.querySelector(".col-12 col-md-6 #contenedor2")
 contenedor2.textContent= "25% OFF SOLO POR HOY";
 
 
-// create new element
+
 const elem = document.createElement('p');
-
-// add text
-elem.innerHTML = "<p> Incluye impuestos, tasas y cargos</p>, <p>hola</p>";
-
-// grab target element reference
 const target = document.querySelector('.publicidad');
-
-// insert the element before target element
 target.parentNode.insertBefore(elem, target);
 
 

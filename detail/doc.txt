@@ -1,2 +1,2 @@
 1.Se utilizó el proyecto de desarrollo web para hacer los ejemplos de JS.
-2.Se interactuó desde JS con HTML utilizando objetos ya creados, y creando nuevos con un "querySelector".
+2.Se utilizo un evento para dejar regristro de las opiniones públicas de la empresa.
