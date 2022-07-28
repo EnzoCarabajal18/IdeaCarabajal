@@ -46,10 +46,10 @@ const target = document.querySelector('.publicidad');
 target.parentNode.insertBefore(elem, target);
 
 
-let nombre = prompt("ingrese su nombre");
-alert ("Bienvenido " + nombre + " "+ " a Mendoza Viajes");
-let jsonCompleto = JSON.stringify(nombre); 
-console.log(jsonCompleto); 
+// let nombre = prompt("ingrese su nombre");
+// alert ("Bienvenido " + nombre + " "+ " a Mendoza Viajes");
+// let jsonCompleto = JSON.stringify(nombre); 
+// console.log(jsonCompleto); 
 
 // let ubicacion = ["Mar Del Plata", "bariloche", "jujuy", "villa Gesell"];
 // const descuentos = ubicacion.slice (0, 1);

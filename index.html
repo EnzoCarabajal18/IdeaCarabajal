@@ -36,14 +36,7 @@
         </svg>
         <p>Hoteles</p>
       </a>
-      <a href="trabajos.html" class="menu on-off">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -4 24 24" width="24" fill="currentColor">
-          <path
-            d="M1 14h18a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2zM2 0h16a2 2 0 0 1 2 2v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V2a2 2 0 0 1 2-2zm16 11V2H2v9h16z">
-          </path>
-        </svg>
-        <p>Trabajar en mza viajes</p>
-      </a>
+
       <a href="asistencias.html" class="menu on-off">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.5 -1.5 24 24" width="24" fill="currentColor">
           <path
@@ -52,7 +45,7 @@
       </svg>
         <p>Asistencias</p>
       </a>
-      <a href="formulario.html" class="menu on-off">
+      <a href="opiniones.html" class="menu on-off">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 -2 24 24" width="32" fill="currentColor"><path d="M6 15H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3h3l3 3v10a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-3zm0-2V7a2 2 0 0 1 2-2h2V2H2v11h4zm8.172-6H8v11h8V8.828L14.172 7z"></path></svg>
         <p>Opiniones</p>
       </a>
@@ -118,7 +111,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-der col-md-12 col-lg-4">
             <div class="row">
               <div class="col-md-12 col-md-6">
@@ -126,8 +118,14 @@
                 <img class="image-public" src="images/imagen-public.jpg" alt="">
                 <h3 class="text-2">Disfruta de los mejores descuentos hasta en 12 cuotas sin interes</h3>
                 <form>
-                    <legend>Buscá la mejor fecha para tu viaje</legend>
-                    <div class="mb-3">
+                  <!-- Ejemplo para json -->
+                     <legend>Elegí tu destino soñado</legend>
+                     <div id="div-productos">Nada</div>
+                     <hr>
+                 
+                     <div id="div-carrito"></div>
+                     <script src="./js/json.js"></script>
+                    <!--<div class="mb-3">
                       <label for="disabledTextInput" class="form-label">Origen</label>
                       <input type="text" id="disabledTextInput" class="form-control" placeholder="Ingresá desde donde viajas">
                     </div>
@@ -136,14 +134,14 @@
                       <select id="disabledSelect" class="form-select">
                         <option>Seleccioná tu destino</option>
                       </select>
-                    </div>
-                    <div class="mb-3">
+                    </div> -->
+                    <!-- <div class="mb-3">
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="Check" disabled>
                         <label class="form-check-label" for=>Permitir filtros</label>
                       </div>
                     </div>
-                    <button class="btn btn-primary">Buscar</button>
+                    <button class="btn btn-primary">Buscar</button> -->
                 </form>
                 <hr>
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
