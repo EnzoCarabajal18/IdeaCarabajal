@@ -7,11 +7,19 @@
   .segmento{
     margin-top: 30px;
     border-radius: solid 1px;
-    display: inline-grid;
+    width: 100%;
   }
   .registering{
-    margin-top: 40px;
+    margin-top: 75px;
+    padding: .5rem 1.5rem;
+    background-color: var(--bs-table-bg);
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
   }
   td{
     margin-bottom: 45px;
   }
+
+.datos-guardados{
+    margin: 10px;
+}

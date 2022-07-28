@@ -5,6 +5,31 @@ function accion(){
   }
 }
 
+// let destinos = `[{
+//   "lugar1": "mar del plata";
+//   "precio": 34.535;
+// }
+// {
+//   "lugar2": "bariloche";
+//     "precio": 65.535;
+// }
+// {
+//   "lugar3": "jujuy";
+//   "precio": 57.535;
+
+// }
+// {
+//   "lugar4": "villa gesell";
+//   "precio": 39.535;
+// }
+// ]`;
+
+  
+//console.log(typeof destinos);
+
+
+
+
 let parrafo = document.getElementsByClassName('text-2');
 parrafo[3].textContent="Ingresá a nuestra app y obtené beneficios increibles";
 
@@ -21,8 +46,11 @@ const target = document.querySelector('.publicidad');
 target.parentNode.insertBefore(elem, target);
 
 
-// let nombre = prompt("ingrese su nombre");
-// alert ("Bienvenido " + nombre + " "+ " a Mendoza Viajes");
+let nombre = prompt("ingrese su nombre");
+alert ("Bienvenido " + nombre + " "+ " a Mendoza Viajes");
+let jsonCompleto = JSON.stringify(nombre); 
+console.log(jsonCompleto); 
+
 // let ubicacion = ["Mar Del Plata", "bariloche", "jujuy", "villa Gesell"];
 // const descuentos = ubicacion.slice (0, 1);
 // const descuentos2 = ubicacion.slice (3, 4);

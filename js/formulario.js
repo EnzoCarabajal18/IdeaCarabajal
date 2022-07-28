@@ -1,52 +1,92 @@
-// let formularios = [];
-// let formulario;
-// let inputNombre;
-// let inputApellido;
-// let inputEmail;
-// let inputComentario;
+let formularios = [];
+let formulario;
+let inputNombre;
+let inputApellido;
+let inputComentario;
+let tabla;
+ let nombre = sessionStorage.getItem('nombre');
+ let apellido = sessionStorage.getItem('apellido');
+ let comentario = sessionStorage.getItem('comentario');
+ document.getElementById("nombre").value = nombre;
+ document.getElementById("apellido").value = apellido;
+ document.getElementById("comentario").value = comentario;
 
+class formularioCantidad {
+  constructor(nombre, apellido, comentario){
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.comentario = comentario;
+    console.log(nombre);
+  }
+  
+}
+function cargarDatos(){
+  formulario = document.getElementById("formulario");
+  inputNombre = document.getElementById("nombre");
+  inputApellido = document.getElementById("apellido");
+  inputComentario = document.getElementById("comentario");
+  tabla = document.getElementById("reset");
+}
+cargarDatos();
+formulario.onsubmit = (event) => {
+  event.preventDefault();
+  let nuevoFormulario = new formularioCantidad(inputNombre.value, inputApellido.value, inputComentario.value);
+  if(inputNombre.value != "" && inputApellido.value != "" && inputComentario.value != "" && inputComentario.value != ""){
+    formularios.push(nuevoFormulario);
+                    //limpiarDatos();
+    agregarComentarios();
+    guardarDatos();
+    formulario.reset();
+  }else{
+    alert("Por favor ingrese todos los datos.")
+  }
+}
+function guardarDatos(){
+  nombre = document.getElementById("nombre");
+  apellido = document.getElementById("apellido");
+  comentario = document.getElementById("comentario");
+  sessionStorage.setItem("nombre", nombre.value);
+  sessionStorage.setItem("apellido", apellido.value);
+  sessionStorage.setItem("comentario", comentario.value); 
+}
 
-
-// class formularioCantidad {
-//   constructor(nombre, apellido, email, comentario){
-//     this.nombre = nombre;
-//     this.apellido = apellido;
-//     this.email = email;
-//     this.comentario = comentario;
+//PROBLEMA
+// function limpiarDatos(){
+//   while(tabla.row.length > 1){
+//     tabla.deleterow(1)
 //   }
 // }
 
-// function cargarDatos(){
-//   formulario = document.getElementById("formulario");
-//   inputNombre = document.getElementById("nombre");
-//   inputApellido = document.getElementById("apellido");
-//   inputEmail = document.getElementById("email");
-//   inputComentario = document.getElementById("comentario");
-//   console.log(formulario, inputNombre, inputApellido, inputEmail, inputComentario);
-// }
-// cargarDatos();
-
-//let formulario = document.getElementById("formulario");
-// formulario.onsubmit = (event) => {
-//   event.preventDefault();
-//   console.log("evento")
-// }
-
-
-
-let miFormulario = document.getElementById ("formulario");
-  let inputNombre = document.getElementById("show-nombre");
-  let inputApellido = document.getElementById("show-apellido");
-  let inputEmail = document.getElementById("show-email");
-  let inputComentario = document.getElementById("show-comentario");
-miFormulario. addEventListener ("submit", validarFormulario );
-function validarFormulario (e){
-e.preventDefault ();
-let formulario = e.target
-inputNombre.textContent=formulario.children[0].value;
-inputApellido.textContent=formulario.children[1].value;
-inputEmail.textContent=formulario.children[2].value;
-inputComentario.textContent=formulario.children[3].value;
+function agregarComentarios(){
+  formularios.forEach(datos => {
+    tabla = document.querySelector(".table");
+    let filaTabla = document.createElement("tr");
+    filaTabla.innerHTML = `
+    <td>${datos.nombre}</td>
+    <td>${datos.apellido}</td>
+    <td>${datos.comentario}</td>
+    `
+    tabla.append(filaTabla)
+  });
 }
+
+
+
+
+// let miFormulario = document.getElementById ("formulario");
+//   let inputNombre = document.getElementById("show-nombre");
+//   let inputApellido = document.getElementById("show-apellido");
+//   let inputEmail = document.getElementById("show-email");
+//   let inputComentario = document.getElementById("show-comentario");
+// miFormulario. addEventListener ("submit", validarFormulario );
+// function validarFormulario (e){
+// e.preventDefault ();
+// let formulario = e.target
+// inputNombre.textContent=formulario.children[0].value;
+// inputApellido.textContent=formulario.children[1].value;
+// inputEmail.textContent=formulario.children[2].value;
+// inputComentario.textContent=formulario.children[3].value;
+// formulario.reset();
+// }
 
 
