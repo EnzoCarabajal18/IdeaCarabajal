@@ -16,30 +16,32 @@ class formularioCantidad {
     this.nombre = nombre;
     this.apellido = apellido;
     this.comentario = comentario;
-    console.log(nombre);
-  }
-  
+    console.log(nombre, apellido, comentario);
+  } 
 }
-function cargarDatos(){
+//EJEMPLO FUNCIONES INVOCADAS
+(function cargarDatos(){
   formulario = document.getElementById("formulario");
   inputNombre = document.getElementById("nombre");
   inputApellido = document.getElementById("apellido");
   inputComentario = document.getElementById("comentario");
   tabla = document.getElementById("reset");
-}
-cargarDatos();
+})();
 formulario.onsubmit = (event) => {
-  event.preventDefault();
-  let nuevoFormulario = new formularioCantidad(inputNombre.value, inputApellido.value, inputComentario.value);
-  if(inputNombre.value != "" && inputApellido.value != "" && inputComentario.value != "" && inputComentario.value != ""){
-    formularios.push(nuevoFormulario);
-                    //limpiarDatos();
-    agregarComentarios();
-    guardarDatos();
-    formulario.reset();
-  }else{
-    alert("Por favor ingrese todos los datos.")
-  }
+event.preventDefault();
+let nuevoFormulario = new formularioCantidad(inputNombre.value, inputApellido.value, inputComentario.value);
+//   if(inputNombre.value != "" && inputApellido.value != "" && inputComentario.value != "" && inputComentario.value != ""){
+//formularios.push(nuevoFormulario);
+//agregarComentarios();
+//guardarDatos();
+//     formulario.reset();
+//   }else{
+//     alert("Por favor ingrese todos los datos.")
+//   }
+//EJEMPLO OPERADOR TERNARIO
+(inputNombre.value != "" && inputApellido.value != "" && inputComentario.value != "" && inputComentario.value != "")? formularios.push(nuevoFormulario) : alert("Por favor ingrese todos los datos.");
+agregarComentarios();
+guardarDatos();
 }
 function guardarDatos(){
   nombre = document.getElementById("nombre");
@@ -49,14 +51,6 @@ function guardarDatos(){
   sessionStorage.setItem("apellido", apellido.value);
   sessionStorage.setItem("comentario", comentario.value); 
 }
-
-//PROBLEMA
-// function limpiarDatos(){
-//   while(tabla.row.length > 1){
-//     tabla.deleterow(1)
-//   }
-// }
-
 function agregarComentarios(){
   formularios.forEach(datos => {
     tabla = document.querySelector(".table");

@@ -13,3 +13,16 @@
 //   }
 // }
 // alert ("La ganancia del fin de semana fue de $" + gananciaTotal);
+const usuario1 = {
+    nombre: "John Doe",
+    edad: 14
+  }
+  const usuario2 = {
+    carsNum : 20,
+    marca : "VW"
+  };
+  
+  console.log( usuario1 || "El usuario no existe" )
+  // { nombre: 'John Doe', edad: 14 }
+  console.log( usuario2 || "El usuario no existe" )
+  // El usuario no existe

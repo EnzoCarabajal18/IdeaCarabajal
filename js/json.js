@@ -1,21 +1,31 @@
-let productos = [
+// const productos = [
+//     { id: 100, nombre: "Mar Del Plata", precio: 34.535},
+//     { id: 101, nombre: "Bariloche", precio: 65.535 },
+//     { id: 102, nombre: "Jujuy", precio: 57.535 },
+//     { id: 103, nombre: "Villa Gesell", precio: 39.535 },
+//   ];
+//EJEMPLO SPREAD DE ARRAYS
+  const productosEnDescuento = [
     { id: 100, nombre: "Mar Del Plata", precio: 34.535},
-    { id: 101, nombre: "Bariloche", precio: 65.535 },
-    { id: 102, nombre: "Jujuy", precio: 57.535 },
     { id: 103, nombre: "Villa Gesell", precio: 39.535 },
-  ];
-  
+    ];
+  const productosSinDescuento = [
+    { id: 101, nombre: "Bariloche", precio: 65.535 },
+    { id: 102, nombre: "Jujuy", precio: 57.535 },]
+const productos = [...productosEnDescuento, ...productosSinDescuento]
   let aux = localStorage.getItem("productosEnCarro");
   let productosEnCarro;
-  
-  if (!aux) {
-    productosEnCarro = [];
-  } else {
-    productosEnCarro = JSON.parse(aux);
-    pintarCarrito();
-  }
-  
-  function pintarListado() {
+  let precio;
+  //EJEMPLO OPERADOR TERNARIO
+  // if (aux) {
+  //   productosEnCarro = [];
+  // } else {
+  //   productosEnCarro = JSON.parse(aux);
+  //   pintarCarrito();
+  // }
+(aux)? productosEnCarro = [] : productosEnCarro = JSON.parse(aux); pintarCarrito();
+  //EJEMPLO FUNCIONES INVOCADAS
+  (function pintarListado() {
     let aux = "";
     for (let i = 0; i < productos.length; i++) {
       aux = aux + `<div onclick="meterAlCarro({id: ${productos[i].id}, nombre: '${productos[i].nombre}', precio: ${productos[i].precio}})" style="cursor: pointer;">
@@ -24,23 +34,17 @@ let productos = [
     </div>`;
     }
     document.getElementById("div-productos").innerHTML = aux;
-    
-  }
-  pintarListado();
-  
+  })();
   function meterAlCarro(objetosProducto) {
     productosEnCarro.push(objetosProducto);
     localStorage.setItem("productosEnCarro", JSON.stringify(productosEnCarro));
     pintarCarrito();
     }
-
-
   function borrarDelCarro(id) {
     productosEnCarro.splice(id, 1);
     localStorage.setItem("productosEnCarro", JSON.stringify(productosEnCarro));
     pintarCarrito();
   }
-  
   function pintarCarrito() {
     let aux = "";
     for (let i = 0; i < productosEnCarro.length; i++) {

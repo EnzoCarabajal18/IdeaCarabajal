@@ -4,7 +4,7 @@ function accion(){
     desplaza[i].classList.toggle('on-off');
   }
 }
-
+//desplaza < desplaza.length? desplaza[i].classList.toggle('on-off') : alert('Error');
 // let destinos = `[{
 //   "lugar1": "mar del plata";
 //   "precio": 34.535;
@@ -23,8 +23,6 @@ function accion(){
 //   "precio": 39.535;
 // }
 // ]`;
-
-  
 //console.log(typeof destinos);
 
 
