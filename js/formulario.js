@@ -42,6 +42,17 @@ let nuevoFormulario = new formularioCantidad(inputNombre.value, inputApellido.va
 (inputNombre.value != "" && inputApellido.value != "" && inputComentario.value != "" && inputComentario.value != "")? formularios.push(nuevoFormulario) : alert("Por favor ingrese todos los datos.");
 agregarComentarios();
 guardarDatos();
+Swal.fire({
+  position: 'top',
+  icon: 'success',
+  title: 'Gracias por compartir tu experiencia',
+  showConfirmButton: false,
+  timer: 2000
+})
+// Toastify({
+//   text: "This is a toast",
+//   duration: 3000
+//   }).showToast();
 }
 function guardarDatos(){
   nombre = document.getElementById("nombre");
@@ -63,10 +74,6 @@ function agregarComentarios(){
     tabla.append(filaTabla)
   });
 }
-
-
-
-
 // let miFormulario = document.getElementById ("formulario");
 //   let inputNombre = document.getElementById("show-nombre");
 //   let inputApellido = document.getElementById("show-apellido");
@@ -82,5 +89,3 @@ function agregarComentarios(){
 // inputComentario.textContent=formulario.children[3].value;
 // formulario.reset();
 // }
-
-

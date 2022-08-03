@@ -5,6 +5,7 @@
 //     { id: 103, nombre: "Villa Gesell", precio: 39.535 },
 //   ];
 //EJEMPLO SPREAD DE ARRAYS
+
   const productosEnDescuento = [
     { id: 100, nombre: "Mar Del Plata", precio: 34.535},
     { id: 103, nombre: "Villa Gesell", precio: 39.535 },
@@ -13,9 +14,11 @@
     { id: 101, nombre: "Bariloche", precio: 65.535 },
     { id: 102, nombre: "Jujuy", precio: 57.535 },]
 const productos = [...productosEnDescuento, ...productosSinDescuento]
+localStorage.setItem("productosEnCarro", JSON.stringify(productos));
   let aux = localStorage.getItem("productosEnCarro");
   let productosEnCarro;
   let precio;
+  
   //EJEMPLO OPERADOR TERNARIO
   // if (aux) {
   //   productosEnCarro = [];
@@ -23,7 +26,7 @@ const productos = [...productosEnDescuento, ...productosSinDescuento]
   //   productosEnCarro = JSON.parse(aux);
   //   pintarCarrito();
   // }
-(aux)? productosEnCarro = [] : productosEnCarro = JSON.parse(aux); pintarCarrito();
+(aux)? productosEnCarro = [] : productosEnCarro = JSON.parse(aux);
   //EJEMPLO FUNCIONES INVOCADAS
   (function pintarListado() {
     let aux = "";
@@ -36,10 +39,12 @@ const productos = [...productosEnDescuento, ...productosSinDescuento]
     document.getElementById("div-productos").innerHTML = aux;
   })();
   function meterAlCarro(objetosProducto) {
-    productosEnCarro.push(objetosProducto);
-    localStorage.setItem("productosEnCarro", JSON.stringify(productosEnCarro));
-    pintarCarrito();
-    }
+      if(productosEnCarro.length < 1){
+        productosEnCarro.push(objetosProducto);
+        localStorage.setItem("productosEnCarro", JSON.stringify(productosEnCarro));
+        pintarCarrito();
+      }
+  }
   function borrarDelCarro(id) {
     productosEnCarro.splice(id, 1);
     localStorage.setItem("productosEnCarro", JSON.stringify(productosEnCarro));
