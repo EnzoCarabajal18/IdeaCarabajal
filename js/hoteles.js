@@ -82,3 +82,53 @@ const usuario1 = {
 
 
 
+//ejemplo clase 
+// fetch('https://pokeapi.co/api/v2/pokemon?limit=5&offset=0')
+//   .then((resinicial) => resinicial.json())
+//   .then((res) => {
+//     const miArray = res.results;
+
+//     let htmlAux = '';
+//     for (let i = 0; i < miArray.length; i++) {
+//       htmlAux =
+//         htmlAux +
+//         `<div>
+//             <h3>${miArray[i].name}</h3>
+//             <a href="${miArray[i].url}">${miArray[i].url}</a>
+//         </div>`;
+//     }
+//     document.getElementById('listadoDePoques').innerHTML = htmlAux;
+//   })
+//   .catch((e) => {
+//     console.log(e);
+//   });
+
+
+
+
+
+
+// function clickEnPoque(name) {
+//   alert('click en ' + name);
+// }
+
+// fetch('https://pokeapi.co/api/v2/pokemon?limit=5&offset=0')
+//   .then((resinicial) => resinicial.json())
+//   .then((res) => {
+//     const miArray = res.results;
+
+//     let htmlAux = '';
+//     for (let i = 0; i < miArray.length; i++) {
+//       htmlAux =
+//         htmlAux +
+//         `<div onclick="clickEnPoque('${miArray[i].name}')">
+//             <h3>${miArray[i].name}</h3>
+//             <a href="${miArray[i].url}">${miArray[i].url}</a>
+//         </div>`;
+//     }
+//     document.getElementById('listadoDePoques').innerHTML = htmlAux;
+//     console.log(htmlAux);
+//   })
+//   .catch((e) => {
+//     console.log(e);
+//   });
