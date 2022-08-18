@@ -1,0 +1,38 @@
+[
+    {
+    "id": 1,
+    "url": "hoteles.html#mardel",
+    "name": "Mar del Plata",
+    "precio": 34.535,
+    "descripcion":"Zapatillas",
+    "clase":"mardelplata",
+    "imagen":"images/mdp.jpg"
+    },
+    {
+    "id": 2,
+    "url": "hoteles.html#bariloche",
+    "name": "Bariloche",
+    "precio": 65.535,
+    "descripcion":"Zapatillas",
+    "clase":"bariloche",
+    "imagen":"images/bariloche.webp"
+    },
+    {
+    "id": 3,
+    "url": "hoteles.html#jujuy",
+    "name": "Jujuy",
+    "precio": 57.535,
+    "descripcion":"Zapatillas",
+    "clase":"jujuy",
+    "imagen":"images/jujuy.webp"
+    },
+    {
+    "id": 4,
+    "url": "hoteles.html#villagesell",
+    "name": "Villa Gesell",
+    "precio": 39.535,
+    "descripcion":"Zapatillas",
+    "clase":"villagesell",
+    "imagen":"images/villagesell.jpg"
+    }
+]  

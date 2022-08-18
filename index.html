@@ -56,60 +56,7 @@
       <div class="container">
         <div class="row">
           
-          <div class="col-izq col-md-12 col-lg-8">
-            <div class="row row-index p-3">
-              <div class="col-12 col-md-6 btn-mardelplata">
-              </div>
-              <div class="col-12 col-md-6">
-                <h2 class="fst-italic text-1">Mar del plata</h2>
-                <h3 class="text-2">Te regalamos hasta $8.000 puntos por tu primera compra</h3>
-                <hr>
-                <p>Precio final por persona</p>
-                <p>$34.535</p>
-                <p id="contenedor"></p>
-                <P id="contenedor2"></P>
-                <a class="col-a" href="#">Ver Más</a>
-              </div>
-            </div>
-            <div class="row row-index p-3">
-              <div class="col-12 col-md-6 btn-bariloche">
-              </div>
-              <div class="col-12 col-md-6 light">
-                <h2 class="fst-italic text-1">Bariloche</h2>
-                <h3 class="text-2">Con tarjeta tus compras diarias suman puntos</h3>
-                <hr>
-                <p>Precio final por persona</p>
-                <p>$65.535</p>
-                <p> Incluye impuestos, tasas y cargos</p>
-                <a class="col-a" href="#">Ver Más</a>
-              </div>
-            </div>
-            <div class="row row-index p-3">
-              <div class="col-12 col-md-6 btn-jujuy">
-              </div>
-              <div class="col-12 col-md-6 light">
-                <h2 class="fst-italic text-1">Jujuy</h2>
-                <h3 class="text-2">Con tu compra obtenes 20% off en tu próxima compra</h3>
-                <hr>
-                <p>Precio final por persona</p>
-                <p>$57.535</p>
-                <p> Incluye impuestos, tasas y cargos</p>
-                <a class="col-a" href="#">Ver Más</a>
-              </div>
-            </div>
-            <div class="row row-index p-3">
-              <div class="col-12 col-md-6 btn-villagesell">
-              </div>
-              <div class="col-12 col-md-6 light">
-                <h2 class="fst-italic text-1">Villa Gesell</h2>
-                <h3 class="text-2">Recibí ofertas y descubrí el mundo</h3>
-                <hr>
-                <p>Precio final por persona</p>
-                <p>$39.535</p>
-                <p> Incluye impuestos, tasas y cargos</p>
-                <a class="col-a" href="#">Ver Más</a>
-              </div>
-            </div>
+          <div class="col-izq col-md-12 col-lg-8" id="contenido">
           </div>
           <div class="col-der col-md-12 col-lg-4">
             <div class="row">
@@ -239,5 +186,36 @@
     crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <script src="js/json.js"></script>
+    <script>
+    let contenido = document.querySelector('#contenido')
+      function obtenerDatos() {
+            fetch('product.json')
+                .then(res => res.json())
+                .then(datos => {
+                    tabla(datos)
+                })
+      }
+      obtenerDatos();
+      function tabla(datos) {
+            for(let valor of datos){
+              console.log(valor.clase);
+                contenido.innerHTML += `
+                <div class="row row-index p-3">
+                  <div class="col-12 col-md-6 btn-${valor.clase}">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <h2 class="fst-italic text-1">${valor.name}</h2>
+                    <h3 class="text-2">${valor.descripcion}</h3>
+                    <hr>
+                    <p>Precio final por persona</p>
+                    <p>$${valor.precio}</p>
+                    <p>Incluye impuestos, tasas y cargos</p> 
+                    <a class="col-a" href="${valor.url}">Ver Más</a>
+                  </div>
+                </div>
+                `
+            }
+      }
+    </script>
   </body>
 </html>

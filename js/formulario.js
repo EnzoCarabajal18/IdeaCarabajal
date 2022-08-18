@@ -22,34 +22,6 @@ document.getElementById('form')
     });
 });
 
-//   const btn = document.getElementById('button');
-
-//   document.getElementById('form')
-//    .addEventListener('submit', function(event) {
-//      event.preventDefault();
-  
-//      btn.value = 'Enviando...';
-  
-//      const serviceID = 'default_service';
-//      const templateID = 'template_ot28ihh';
-  
-//      emailjs.sendForm(serviceID, templateID, this)
-//       .then(() => {
-//         btn.value = 'ENVIAR FORMULARIO';
-//         //alert('Sent!');
-//         Swal.fire({
-//         position: 'top',
-//         icon: 'success',
-//         title: 'Gracias por compartir tu experiencia',
-//         showConfirmButton: false,
-//         timer: 2000
-// })
-//       }, (err) => {
-//         btn.value = 'ENVIAR FORMULARIO';
-//         alert(JSON.stringify(err));
-//       });
-//   });
-
 
 // let formularios = [];
 // let formulario;

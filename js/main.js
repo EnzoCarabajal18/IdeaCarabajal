@@ -4,6 +4,9 @@ function accion(){
     desplaza[i].classList.toggle('on-off');
   }
 }
+const elem = document.createElement('p');
+const target = document.querySelector('.publicidad');
+target.parentNode.insertBefore(elem, target);
 //desplaza < desplaza.length? desplaza[i].classList.toggle('on-off') : alert('Error');
 // let destinos = `[{
 //   "lugar1": "mar del plata";
@@ -25,23 +28,6 @@ function accion(){
 // ]`;
 //console.log(typeof destinos);
 
-
-
-
-let parrafo = document.getElementsByClassName('text-2');
-parrafo[3].textContent="Ingresá a nuestra app y obtené beneficios increibles";
-
-let container = document.getElementById("contenedor")
-container.innerHTML = "<p> Incluye impuestos, tasas y cargos</p>"
-
-let texto = document.querySelector(".col-12 col-md-6 #contenedor2")
-contenedor2.textContent= "25% OFF SOLO POR HOY";
-
-
-
-const elem = document.createElement('p');
-const target = document.querySelector('.publicidad');
-target.parentNode.insertBefore(elem, target);
 
 
 // let nombre = prompt("ingrese su nombre");
