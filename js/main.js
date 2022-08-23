@@ -7,66 +7,62 @@ function accion(){
 const elem = document.createElement('p');
 const target = document.querySelector('.publicidad');
 target.parentNode.insertBefore(elem, target);
-//desplaza < desplaza.length? desplaza[i].classList.toggle('on-off') : alert('Error');
-// let destinos = `[{
-//   "lugar1": "mar del plata";
-//   "precio": 34.535;
-// }
-// {
-//   "lugar2": "bariloche";
-//     "precio": 65.535;
-// }
-// {
-//   "lugar3": "jujuy";
-//   "precio": 57.535;
+//EJEMPLO SPREAD DE ARRAYS
+const productosEnDescuento = [
+  { id: 100, nombre: "Mar Del Plata", precio: 34.535},
+  { id: 103, nombre: "Villa Gesell", precio: 39.535 },
+  ];
+const productosSinDescuento = [
+  { id: 101, nombre: "Bariloche", precio: 65.535 },
+  { id: 102, nombre: "Jujuy", precio: 57.535 },]
+const productos = [...productosEnDescuento, ...productosSinDescuento]
+localStorage.setItem("productosEnCarro", JSON.stringify(productos));
+let aux = localStorage.getItem("productosEnCarro");
+let productosEnCarro;
+let precio;
 
+//EJEMPLO OPERADOR TERNARIO
+// if (aux) {
+//   productosEnCarro = [];
+// } else {
+//   productosEnCarro = JSON.parse(aux);
+//   pintarCarrito();
 // }
-// {
-//   "lugar4": "villa gesell";
-//   "precio": 39.535;
-// }
-// ]`;
-//console.log(typeof destinos);
-
-
-
-// let nombre = prompt("ingrese su nombre");
-// alert ("Bienvenido " + nombre + " "+ " a Mendoza Viajes");
-// let jsonCompleto = JSON.stringify(nombre); 
-// console.log(jsonCompleto); 
-
-// let ubicacion = ["Mar Del Plata", "bariloche", "jujuy", "villa Gesell"];
-// const descuentos = ubicacion.slice (0, 1);
-// const descuentos2 = ubicacion.slice (3, 4);
-// alert ("Por temporada baja " + descuentos + " y " + descuentos2 +" están en descuento");
-// let precio = [34.535, 65.535, 57.535, 39.535];
-// let destinoElegido,precioElegido;
-// agregardestino();
-// function agregardestino(){
-//   let elegir = prompt("Seleccione el destino:\n1 - Mar del Plata\n2 - Bariloche\n3 - Jujuy\n4 - Villa Gesell\n5 - Salir");
-//   if(elegir == 5){
-//     alert("Cerraste el programa");
-//   }
-//   else if((5 > elegir) && (elegir > 0)){
-//     for (let i = 0; i < elegir; i++){
-//       if(ubicacion[i] == ubicacion[elegir-1]){
-//         destinoElegido = ubicacion[i];
-//         precioElegido = precio[i];
-//       }
-//     }
-//   }
-//   else{
-//     alert("Opción incorrecta!!!");
-//   }
-// }
-
-// function Lugar(nombreLugar, precioLugar) {
-//   this.nombreLugar = nombreLugar;
-//   this.precioLugar = precioLugar;
-//   this.informacion = function(){ alert("La ciudad "+ this.nombreLugar +" tiene un costo de "+ this.precioLugar)}
-// }
-// const lugar1 = new Lugar(destinoElegido,precioElegido);
-// if(destinoElegido){
-//   lugar1.informacion();
-// }
-
+(aux)? productosEnCarro = [] : productosEnCarro = JSON.parse(aux);
+//EJEMPLO FUNCIONES INVOCADAS
+(function pintarListado() {
+  let aux = "";
+  for (let i = 0; i < productos.length; i++) {
+    aux = aux + `<div onclick="meterAlCarro({id: ${productos[i].id}, nombre: '${productos[i].nombre}', precio: ${productos[i].precio}})" style="cursor: pointer;">
+    <h3>${productos[i].nombre} </h3>
+    <p> Precio: $ ${productos[i].precio} </p>
+  </div>`;
+  }
+  document.getElementById("div-productos").innerHTML = aux;
+})();
+function meterAlCarro(objetosProducto) {
+    if(productosEnCarro.length < 1){
+      productosEnCarro.push(objetosProducto);
+      localStorage.setItem("productosEnCarro", JSON.stringify(productosEnCarro));
+      pintarCarrito();
+    }
+}
+function borrarDelCarro(id) {
+  productosEnCarro.splice(id, 1);
+  localStorage.setItem("productosEnCarro", JSON.stringify(productosEnCarro));
+  pintarCarrito();
+}
+function pintarCarrito() {
+  let aux = "";
+  for (let i = 0; i < productosEnCarro.length; i++) {
+    aux =
+      aux +
+      `<div >
+    <h3> Seleccionaste: ${productosEnCarro[i].nombre} por solo $ ${productosEnCarro[i].precio}</h3>
+    <p> Precio final: $ ${productosEnCarro[i].precio} </p>
+    <p onclick="borrarDelCarro(${i})" style="cursor: pointer;"> 🗑️</p>
+  </div>`;
+  break;
+  }
+  document.getElementById("div-carrito").innerHTML = aux;
+}

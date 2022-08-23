@@ -53,11 +53,12 @@
         margin: 0;
     }
 
-    .menu {
+     .menu {
         padding: 0;
-        margin: 0;
-        display: -webkit-inline-box;
-    }
+        margin-left: 15px;
+        display: -webkit-box;
+    
+     }
     .col-lg-4{
         width: 100%;
         margin-top: 10px;
@@ -223,6 +224,11 @@
 
     .menu {
         text-align: center;
+        &:hover {
+            color: #000;
+            transform: scale(0px);
+            max-width: 100%;
+    }
     }
 }
 @media screen and (max-width: 1023px){

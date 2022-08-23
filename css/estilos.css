@@ -33,7 +33,7 @@ nav {
 
 .menu:hover {
   color: #000;
-  transform: scale(1.4);
+  transform: scale(1.05);
   max-width: 100%;
 }
 
@@ -624,8 +624,8 @@ td {
   }
   .menu {
     padding: 0;
-    margin: 0;
-    display: -webkit-inline-box;
+    margin-left: 15px;
+    display: -webkit-box;
   }
   .col-lg-4 {
     width: 100%;
@@ -778,6 +778,11 @@ td {
   }
   .menu {
     text-align: center;
+  }
+  .menu:hover {
+    color: #000;
+    transform: scale(0px);
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -69,28 +68,16 @@
     </section>
 
     <section class="hoteles">
-      <div class="dosreyes hotel">
-        <!-- <a href="" class="">
-          <h1 class="texto">VER MÁS</h1>
-        </a> -->
+      <div class="dosreyes hotel" id="mardel">
           <button class="col-a" id="myBtn">Comprar</button>
       </div>
-      <div class="milan hotel">
-        <!-- <a href="" class="">
-          <h1 class="texto">VER MÁS</h1>
-        </a> -->
+      <div class="milan hotel" id="bariloche">
         <button class="col-a" id="myBtn2">Comprar</button>
       </div>
-      <div class="hoteles-names plazajujuy hotel">
-        <!-- <a href="" class="">
-          <h1 class="texto">VER MÁS</h1>
-        </a> -->
+      <div class="hoteles-names plazajujuy hotel" id="jujuy">
         <button class="col-a" id="myBtn3">Comprar</button>
       </div>
-      <div class="rideamus hotel">
-        <!-- <a href="" class="">
-          <h1 class="texto">VER MÁS</h1>
-        </a> -->
+      <div class="rideamus hotel" id="villagesell">
         <button class="col-a" id="myBtn4">Comprar </button>
       </div>
     </section>
@@ -101,13 +88,12 @@
     </section>
     <nav aria-label="Page navigation example">
       <ul class="pagination">
-        <li class="page-item"><a class="page-link" href="index.html">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="index.html">Anterior</a></li>
         <li class="page-item"><a class="page-link" href="index.html">1</a></li>
         <li class="page-item"><a class="page-link" href="hoteles.html">2</a></li>
-        <li class="page-item"><a class="page-link" href="trabajos.html">3</a></li>
-        <li class="page-item"><a class="page-link" href="contactos.html">4</a></li>
-        <li class="page-item"><a class="page-link" href="asistencias.html">5</a></li>
-        <li class="page-item"><a class="page-link" href="trabajos.html">Next</a></li>
+        <li class="page-item"><a class="page-link" href="asistencias.html">3</a></li>
+        <li class="page-item"><a class="page-link" href="opiniones.html">4</a></li>
+        <li class="page-item"><a class="page-link" href="asistencias.html">Sigiente</a></li>
       </ul>
     </nav>
   </main>
@@ -148,17 +134,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-    <script>
-      function accion(){
-        console.log('funcionando');
-        var desplaza = document.getElementsByClassName('menu');
-        for(var i = 0; i < desplaza.length; i++){
-          desplaza[i].classList.toggle('on-off');
-        }
-      }
-    </script>
+    <script src="js/main.js"></script>
     <script src="./js/hoteles.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="app.js"></script>
+
 </body>
 </html>
